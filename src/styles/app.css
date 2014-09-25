@@ -1,0 +1,387 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #DEDEDE;
+	font-family: 'Roboto', sans-serif;
+	overflow-y: scroll;
+}
+html,body {
+	height: 100%;
+}
+p + p {
+	margin-top: 1em;
+}
+
+.ngview {
+	padding: 15px 25px 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover, a:focus {
+	color: #577EC0;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -40px;
+	visibility: hidden;
+	clear: both;
+}
+
+#container {
+	margin: 0 auto;
+	min-width: 280px;
+	min-height: 100%;
+	max-width: 940px;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 5px 0 #999;
+}
+#header {
+	position: relative;
+	height: 197px;
+	background-image: url(../assets/header-bg.png);
+	background-repeat: no-repeat;
+}
+#header span {
+	font-size: 34px;
+	color: white;
+	text-shadow: 0 0 6px black;
+	position: absolute;
+	left: 130px;
+}
+#header span.first {
+	top: 25px;
+}
+#header span.last {
+	top: 70px;
+}
+#header img {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 30px;
+	left: 25px;
+}
+#menu {
+	line-height: 38px;
+	height: 38px;
+	background: #F1F1F1;
+	padding: 0 20px;
+	border-bottom: 1px solid #999;
+	box-shadow: 0 2px 4px -2px #999;
+	overflow: hidden;
+	box-sizing: border-box;
+	max-width: 940px;
+}
+#menu.sticky {
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+	width: 100vw;
+}
+#menu a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 5px;
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+}
+#menu a span.top {
+	transition: color 0s;
+}
+#menu a:hover span.top, #menu a:focus span.topf {
+	transition: color 0.5s ease-in-out;
+	color: white !important;
+}
+#menu a + a {
+	margin-left: 15px;
+}
+#menu .items a:first-child {
+	color: #577ec0;
+}
+#menu .items a:nth-child(2) {
+	color: #e04b3f;
+}
+#menu .items a:nth-child(3) {
+	color: #5d4987;
+}
+#menu .items a:last-child {
+	color: #0da960;
+}
+#content {
+	position: relative;
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+.maininfo {
+	font-size: 120%;
+	color: #555;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+.maininfo a {
+	text-decoration: none;
+	color: inherit;
+}
+.maininfo a:hover, .maininfo a:focus {
+	text-decoration: underline;
+}
+.biglink {
+	text-align: left;
+	margin-top: 30px;
+}
+.biglink a {
+	text-decoration: none;
+	color: white;
+	background-color: #AAA;
+	padding: 8px 15px;
+	border-radius: 10px;
+	font-size: 120%;
+	transition: all 0.2s ease-in-out;
+}
+.biglink a:hover, .biglink a:focus {
+	background-color: #577ec0;
+}
+#countdown {
+	float: right;
+	padding-right: 5px;
+	line-height: 33px;
+}
+#countdown div {
+	vertical-align: middle;
+	border-radius: 100%;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: red;
+}
+#countdown div + div {
+	margin-left: 5px;
+}
+#countdown div {
+	background-color: #577ec0;
+	box-shadow: 0 0 5px #577ec0;
+	transition: all 0.2s ease-in-out;
+}
+#countdown div.off {
+	background-color: #DDD;
+	box-shadow: none;
+}
+.top {
+	z-index: 100;
+	position: relative;
+}
+#menu a .ripple {
+	display: block;
+	position: absolute;
+	opacity: 0;
+	border-radius: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	z-index: 0;
+}
+#menu a:hover .ripple, #menu a:focus .ripple {
+	animation: ripanim 0.5s linear;
+	-webkit-animation: ripanim 0.5s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes ripanim {
+	100% { opacity: 1; transform: scale(2.5); }
+}
+@-webkit-keyframes ripanim {
+	100% { 
+		opacity: 1; 
+		transform: scale(2.5);
+		-webkit-transform: scale(2.5);
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	color: #577EC0;
+	margin-top: 1.2em;
+	clear: both;
+}
+
+.partners {
+	text-align: center;
+}
+
+.partners a {
+	margin-right: 2em;
+	display: inline-block;
+}
+.sponsors a {
+	margin-right: 2em;
+}
+.sponsors a {
+	float: left;
+}
+.partners a img,
+.sponsors a img {
+	max-width: 250px;
+	max-height: 80px;
+}
+
+.sponsor {
+	clear: left;
+}
+
+.sponsor + .sponsor {
+	margin-top: 50px;
+}
+.sponsor p {
+	text-align: left;
+	margin: 0;
+}
+.sponsor a {
+	position: relative;
+	float: left;
+	margin: 0 20px 0 0px;
+	width: 300px;
+	max-width: 100%;
+}
+.sponsor a img {
+	margin: 0 !important;
+	max-width: 100%;
+}
+
+.sponsor a:hover img, .sponsor a:focus img {
+	transition: all 0.3s ease-in-out;
+	filter: grayscale(0.3);
+	-webkit-filter: grayscale(0.3);
+	-moz-filter: grayscale(0.3);
+	-ms-filter: grayscale(0.3);
+	-o-filter: grayscale(0.3);
+	opacity: 0.65;
+}
+
+#content img {
+	max-width: 100%;
+	margin-top: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+.schedule {
+	width: 100%;
+	border-spacing: 0;
+	min-width: 630px;
+
+}
+
+.schedule_container {
+	overflow-x: auto;
+	width: 100%;
+}
+
+.schedule td, .schedule th {
+	padding: 0.4em;
+}
+
+.schedule .track {
+	width: 30%;
+}
+
+.schedule .speaker {
+	font-variant: small-caps;
+	display: block;
+	font-weight: normal;
+}
+
+.schedule tr:nth-child(even) th {
+	background-color: #F1F1F1;
+}
+
+.schedule tr.break td {
+	background-color: #555;
+	color: white;
+	text-align: center;
+	font-weight: 200;
+}
+
+.schedule td {
+	font-weight: bold;
+}
+
+.schedule th.time {
+	font-weight: 200;
+}
+
+.schedule th.track {
+	color: white;
+}
+
+.schedule th.track1 {
+	background-color: #da4a3e;
+}
+
+.schedule th.track2 {
+	background-color: #149f5a;
+}
+
+.schedule th.track3 {
+	background-color: #f7c63f;
+}
+
+.schedule tr:not(.break) td:not(.empty):hover {
+	background-color: #CBDAF3;
+	cursor: normal;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+	#countdown {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+	#header {
+		height: 130px;
+	}
+	#menu {
+		text-align: center;
+		padding: 0;
+	}
+	.sponsor a {
+		display: inline-block;
+		float: none;
+		margin: 0 0 20px 0;
+	}
+	.sponsor {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+	#header span {
+		left: 100px;
+		font-size: 24px;
+	}
+	#header span.last {
+		top: 58px;
+	}
+	#header img {
+		width: 60px;
+		height: 60px;
+	}
+}
