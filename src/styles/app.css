@@ -12,6 +12,16 @@ p + p {
 	margin-top: 1em;
 }
 
+address {
+	padding-left: 1em;
+	font-style: normal;
+}
+
+address span {
+	display: block;
+	line-height: 150%;
+}
+
 .ngview {
 	padding: 15px 25px 30px;
 }
@@ -19,6 +29,7 @@ p + p {
 a {
 	text-decoration: none;
 	color: #000;
+	outline: 0;
 }
 a:hover, a:focus {
 	color: #577EC0;
@@ -186,38 +197,53 @@ a:hover, a:focus {
 	z-index: 100;
 	position: relative;
 }
-#menu a .ripple {
-	display: block;
-	position: absolute;
-	opacity: 0;
-	border-radius: 100%;
-	transform: scale(0);
-	-webkit-transform: scale(0);
-	z-index: 0;
-}
-#menu a:hover .ripple, #menu a:focus .ripple {
-	animation: ripanim 0.5s linear;
-	-webkit-animation: ripanim 0.5s linear;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-}
-@keyframes ripanim {
-	100% { opacity: 1; transform: scale(2.5); }
-}
-@-webkit-keyframes ripanim {
-	100% { 
-		opacity: 1; 
-		transform: scale(2.5);
-		-webkit-transform: scale(2.5);
-	}
-}
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	color: #577EC0;
 	margin-top: 1.2em;
 	clear: both;
+}
+
+h1:first-child {
+	margin-top: 0.2em;
+}
+
+a.boxlink {
+	display: inline-block;
+	text-decoration: none;
+	margin: 2rem auto;
+	color: white;
+	background-color: #577EC0;
+	padding: 8px 15px;
+	font-size: 120%;
+	font-weight: 300;
+	box-shadow: 3px 4px 2px -2px #AAA;
+	transition: background-color 0.2s ease-in-out;
+}
+
+a.boxlink:hover, a.boxlink:focus {
+	background-color: #678AC6;
+}
+
+a.boxlink:active {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	box-shadow: 1px 2px 1px -1px #AAA;
+}
+
+.eventbrite {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	top: 20px;
+	opacity: 1;
+}
+.eventbrite.ng-hide {
+	top: 50px;
+	opacity: 0;
+}
+.eventbrite.ng-hide-remove {
+	display: block !important;
 }
 
 .partners {

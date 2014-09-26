@@ -23,10 +23,15 @@
 			<span class="last">Karlsruhe 2014</span>
 			<img src="assets/gdg-icon.png" alt="GDG Logo">
 		</div>
-		<div id="menu">
+		<div id="menu" ng-controller="navigationController">
 			<span class="sr-only">Menü:</span>
 			<div id="countdown"></div>
-			<div class="items" ng-controller="navigationController">
+
+			<a href="#" class="menutoggle" ng-click="toggleNavigation($event)">
+				<span class="top">Navigation</span>
+			</a>
+
+			<div class="items" ng-class="{ collapsed: !showNavigation }">
 				<a href="#{{item.url}}" ng-repeat="item in menu"><span class="top">{{ item.label }}</span></a>
 			</div>
 		</div>

@@ -1,0 +1,47 @@
+#menu a .ripple {
+	display: block;
+	position: absolute;
+	opacity: 0;
+	border-radius: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	z-index: 0;
+}
+#menu a:hover .ripple, #menu a:focus .ripple {
+	animation: ripanim 0.5s linear;
+	-webkit-animation: ripanim 0.5s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes ripanim {
+	100% { opacity: 1; transform: scale(2.5); }
+}
+@-webkit-keyframes ripanim {
+	100% { 
+		opacity: 1; 
+		transform: scale(2.5);
+		-webkit-transform: scale(2.5);
+	}
+}
+
+#menu .menutoggle {
+	display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	#menu .menutoggle {
+		display: block;
+	}
+	#menu {
+		height: auto;
+	}
+	#menu .items.collapsed {
+		display: none;
+	}
+	#menu .items a {
+		display: block;
+		margin: 0;
+	}
+}

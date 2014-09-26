@@ -40,6 +40,7 @@ $(function() {
 	var refreshClock = function() {
 		var left = Math.floor((START - Date.now()) / 1000);
 		var leftb = left.toString(2);
+		var i;
 
 		if(left <= 0) {
 			container.empty();
@@ -49,13 +50,13 @@ $(function() {
 		// Initialize bullets (or reset when number of digits changed)
 		if(container.find('div').length === 0 || container.find('div').length > leftb.length) {
 			container.empty();
-			for(var i = 0; i < leftb.length; i++) {
+			for(i = 0; i < leftb.length; i++) {
 				container.append('<div></div>');
 			}
 		}
 
 		var bullets = container.find('div');
-		for(var i = 0; i < leftb.length; i++) {
+		for(i = 0; i < leftb.length; i++) {
 			if(leftb[i] === "1") {
 				$(bullets.get(i)).removeClass('off');
 			} else {

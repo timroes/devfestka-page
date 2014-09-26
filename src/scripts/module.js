@@ -13,6 +13,10 @@ angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate'])
 			controller: '',
 			templateUrl: 'impressum.html'
 		})
+		.when('/anmeldung', {
+			controller: 'registrationController',
+			templateUrl: 'anmeldung.html'
+		})
 		.otherwise({
 			redirectTo: '/info'
 		});

@@ -65,3 +65,16 @@ gulp.task('templates', function() {
 		.pipe(templateCache({ standalone: true }))
 		.pipe(gulp.dest('build/scripts'));
 });
+
+// gulp.task('upload', ['build'], function() {
+// 	var login_data;
+// 	try {
+// 		login_data = require('./ftplogin.json');
+// 	} catch(e) {
+// 		console.error("Cannot find ftplogin.json file with ftp login data.\nSkipping upload...");
+// 		return;
+// 	}
+
+// 	gulp.src('./build/**')
+// 		.pipe(ftp(login_data));
+// });
