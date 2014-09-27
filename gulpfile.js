@@ -21,6 +21,8 @@ gulp.task('clean', function(cb) {
 	rimraf('build', cb);
 });
 
+gulp.task('default', ['serve']);
+
 gulp.task('html', function() {
 	gulp.src(['src/**/*.html', '!src/views/**', '!src/scripts/directives/**'])
 		.pipe(gulp.dest('build'));
