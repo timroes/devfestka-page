@@ -5,6 +5,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	overflow-y: scroll;
 }
+
+body.sticky {
+	/* Menu height */
+	padding-top: 38px;
+}
+
 html,body {
 	height: 100%;
 }
