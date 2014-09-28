@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -5,12 +8,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	overflow-y: scroll;
 }
-
-body.sticky {
-	/* Menu height */
-	padding-top: 38px;
-}
-
 html,body {
 	height: 100%;
 }
@@ -83,53 +80,6 @@ a:hover, a:focus {
 	height: 80px;
 	top: 30px;
 	left: 25px;
-}
-#menu {
-	line-height: 38px;
-	height: 38px;
-	background: #F1F1F1;
-	padding: 0 20px;
-	border-bottom: 1px solid #999;
-	box-shadow: 0 2px 4px -2px #999;
-	overflow: hidden;
-	box-sizing: border-box;
-	max-width: 940px;
-}
-#menu.sticky {
-	position: fixed;
-	top: 0px;
-	z-index: 999;
-	width: 100vw;
-}
-#menu a {
-	display: inline-block;
-	text-decoration: none;
-	padding: 0 5px;
-	position: relative;
-	overflow: hidden;
-	font-weight: bold;
-}
-#menu a span.top {
-	transition: color 0s;
-}
-#menu a:hover span.top, #menu a:focus span.topf {
-	transition: color 0.5s ease-in-out;
-	color: white !important;
-}
-#menu a + a {
-	margin-left: 15px;
-}
-#menu .items a:first-child {
-	color: #577ec0;
-}
-#menu .items a:nth-child(2) {
-	color: #e04b3f;
-}
-#menu .items a:nth-child(3) {
-	color: #5d4987;
-}
-#menu .items a:last-child {
-	color: #0da960;
 }
 #content {
 	position: relative;
@@ -314,71 +264,6 @@ a.boxlink:active {
 	clear: both;
 }
 
-.schedule {
-	width: 100%;
-	border-spacing: 0;
-	min-width: 630px;
-
-}
-
-.schedule_container {
-	overflow-x: auto;
-	width: 100%;
-}
-
-.schedule td, .schedule th {
-	padding: 0.4em;
-}
-
-.schedule .track {
-	width: 30%;
-}
-
-.schedule .speaker {
-	font-variant: small-caps;
-	display: block;
-	font-weight: normal;
-}
-
-.schedule tr:nth-child(even) th {
-	background-color: #F1F1F1;
-}
-
-.schedule tr.break td {
-	background-color: #555;
-	color: white;
-	text-align: center;
-	font-weight: 200;
-}
-
-.schedule td {
-	font-weight: bold;
-}
-
-.schedule th.time {
-	font-weight: 200;
-}
-
-.schedule th.track {
-	color: white;
-}
-
-.schedule th.track1 {
-	background-color: #da4a3e;
-}
-
-.schedule th.track2 {
-	background-color: #149f5a;
-}
-
-.schedule th.track3 {
-	background-color: #f7c63f;
-}
-
-.schedule tr:not(.break) td:not(.empty):hover {
-	background-color: #CBDAF3;
-	cursor: normal;
-}
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
 	#countdown {

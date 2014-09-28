@@ -1,0 +1,138 @@
+@timeslot_height: 150px;
+@timeslot_small_height: 80px;
+
+@border_style: 1px solid #DDD;
+
+.schedule {
+	width: 100%;
+	min-width: 630px;
+}
+
+.timeslot {
+	width: 100%;
+	border: @border_style;
+}
+
+.timeslot.small .timeslot-label,
+.timeslot.small .timeslot-item {
+	height: @timeslot_small_height;
+}
+
+.timeslot-label {
+	height: @timeslot_height;
+	// background-color: rgba(0, 0, 255, 0.2);
+	font-weight: 200;
+	width: 10%;
+	min-width: 60px;
+	display: inline-block;
+	text-align: left;
+	font-size: 120%;
+	padding: 0.5em;
+	color: #666;
+}
+.timeslot-label time {
+	display: block;
+}
+
+.timeslot-items {
+	width: 89%;
+	// background-color: rgba(0, 255, 0, 0.2);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.timeslot-item {
+	height: @timeslot_height;
+	vertical-align: top;
+	// background-color: rgba(255,0,0,0.2);
+	display: inline-block;
+	width: 32%;
+	border-left: @border_style;
+	padding: 0.5em;
+}
+
+.timeslot-item.spanning {
+	width: 100%;
+}
+
+.timeslot-item h1 {
+	margin: 0 0 20px;
+	color: black;
+	font-weight: 300;
+	font-size: 1.25rem;
+}
+
+.timeslot-item .speaker {
+	font-weight: 300;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+	.timeslot-item {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.timeslot-item + .timeslot-item {
+		border-top: @border_style;
+	}
+}
+
+// .schedule_container {
+// 	overflow-x: auto;
+// 	width: 100%;
+// }
+
+// .schedule td, .schedule th {
+// 	padding: 0.4em;
+// }
+
+// .schedule .track {
+// 	width: 30%;
+// }
+
+// .schedule .speaker {
+// 	font-variant: small-caps;
+// 	display: block;
+// 	font-weight: normal;
+// }
+
+// .schedule tr:nth-child(even) th {
+// 	background-color: #F1F1F1;
+// }
+
+// .schedule tr.break td {
+// 	background-color: #555;
+// 	color: white;
+// 	text-align: center;
+// 	font-weight: 200;
+// }
+
+// .schedule td {
+// 	font-weight: bold;
+// }
+
+// .schedule th.time {
+// 	font-weight: 200;
+// }
+
+// .schedule th.track {
+// 	color: white;
+// }
+
+// .schedule th.track1 {
+// 	background-color: #da4a3e;
+// }
+
+// .schedule th.track2 {
+// 	background-color: #149f5a;
+// }
+
+// .schedule th.track3 {
+// 	background-color: #f7c63f;
+// }
+
+// .schedule tr:not(.break) td:not(.empty):hover {
+// 	background-color: #CBDAF3;
+// 	cursor: normal;
+// }

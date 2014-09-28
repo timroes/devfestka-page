@@ -1,0 +1,114 @@
+@menu_height: 38px;
+
+
+body.sticky {
+	padding-top: @menu_height;
+}
+
+.menu_background {
+	background: #F1F1F1;
+	box-shadow: 0 2px 4px -2px #999;
+}
+
+#menu {
+	line-height: @menu_height;
+	height: @menu_height;
+	padding: 0 20px;
+	border-bottom: 1px solid #999;
+	overflow: hidden;
+	box-sizing: border-box;
+	max-width: 940px;
+	.menu_background();
+}
+#menu.sticky {
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+	width: 100%;
+}
+#menu a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 5px;
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+}
+#menu a span.top {
+	transition: color 0s;
+}
+#menu a:hover span.top, #menu a:focus span.topf {
+	transition: color 0.5s ease-in-out;
+	color: white !important;
+}
+#menu a + a {
+	margin-left: 15px;
+}
+#menu .items a:first-child {
+	color: #577ec0;
+}
+#menu .items a:nth-child(2) {
+	color: #e04b3f;
+}
+#menu .items a:nth-child(3) {
+	color: #5d4987;
+}
+#menu .items a:last-child {
+	color: #0da960;
+}
+#menu a .ripple {
+	display: block;
+	position: absolute;
+	opacity: 0;
+	border-radius: 100%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	z-index: 0;
+}
+#menu a:hover .ripple, #menu a:focus .ripple {
+	animation: ripanim 0.5s linear;
+	-webkit-animation: ripanim 0.5s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+}
+@keyframes ripanim {
+	100% { opacity: 1; transform: scale(2.5); }
+}
+@-webkit-keyframes ripanim {
+	100% { 
+		opacity: 1; 
+		transform: scale(2.5);
+		-webkit-transform: scale(2.5);
+	}
+}
+
+#menu .menutoggle {
+	display: none;
+	color: #666;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	#menu .menutoggle {
+		display: block;
+	}
+	#menu {
+		width: 100%;
+		height: auto;
+		overflow: visible;
+	}
+	#menu .items.collapsed {
+		display: none;
+	}
+	#menu .items {
+		position: absolute;
+		width: 100%;
+		z-index: 1000;
+		.menu_background();
+	}
+	#menu .items a {
+		display: block;
+		margin: 0;
+	}
+}

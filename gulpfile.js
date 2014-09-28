@@ -2,34 +2,38 @@ var concat = require('gulp-concat'),
 	debug = require('gulp-debug'),
 	gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
+	less = require('gulp-less'),
+	merge = require('merge-stream'),
 	minifyCss = require('gulp-minify-css'),
 	ngAnnotate = require('gulp-ng-annotate'),
-	rimraf = require('rimraf'),
+	rimraf = require('gulp-rimraf'),
+	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	templateCache = require('gulp-angular-templatecache'),
 	uglify = require('gulp-uglify'),
 	webserver = require('gulp-webserver');
 
 gulp.task('assets', function() {
-	gulp.src('src/assets/**', { base: 'src' })
+	return gulp.src('src/assets/**', { base: 'src' })
 		.pipe(gulp.dest('build'));
 });
 
 gulp.task('build', ['assets', 'html', 'js', 'libs', 'styles', 'templates']);
 
 gulp.task('clean', function(cb) {
-	rimraf('build', cb);
+	return gulp.src('./build', { read: false })
+		.pipe(rimraf());
 });
 
 gulp.task('default', ['serve']);
 
 gulp.task('html', function() {
-	gulp.src(['src/**/*.html', '!src/views/**', '!src/scripts/directives/**'])
+	return gulp.src(['src/**/*.html', '!src/views/**', '!src/scripts/directives/**'])
 		.pipe(gulp.dest('build'));
 });
 
 gulp.task('js', ['jshint'], function() {
-	gulp.src('src/scripts/**/*.js')
+	return gulp.src('src/scripts/**/*.js')
 		.pipe(sourcemaps.init())
 			.pipe(concat('app.min.js'))
 			.pipe(ngAnnotate())
@@ -39,13 +43,13 @@ gulp.task('js', ['jshint'], function() {
 });
 
 gulp.task('jshint', function() {
-	gulp.src('src/scripts/**/*.js')
+	return gulp.src('src/scripts/**/*.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
 
 gulp.task('libs', function() {
-	gulp.src('src/libs/**', { base: 'src' })
+	return gulp.src('src/libs/**', { base: 'src' })
 		.pipe(gulp.dest('build'));
 });
 
@@ -56,14 +60,23 @@ gulp.task('serve', ['build'], function() {
 });
 
 gulp.task('styles', function() {
-	gulp.src('src/styles/*.css')
+
+	var less_src = gulp.src('src/styles/**/*.less')
+		.pipe(less());
+
+	var sass_src = gulp.src('src/styles/**/*.sass')
+		.pipe(sass());
+
+	var css_src = gulp.src('src/styles/**/*.css');
+
+	return merge(less_src, sass_src, css_src)
 		.pipe(concat('app.css'))
 		.pipe(minifyCss())
 		.pipe(gulp.dest('build/styles'));
 });
 
 gulp.task('templates', function() {
-	gulp.src('src/views/**/*.html')
+	return gulp.src('src/views/**/*.html')
 		.pipe(templateCache({ standalone: true }))
 		.pipe(gulp.dest('build/scripts'));
 });
