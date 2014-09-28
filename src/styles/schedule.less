@@ -1,138 +1,144 @@
+@import "mixins";
+
 @timeslot_height: 150px;
 @timeslot_small_height: 80px;
 
 @border_style: 1px solid #DDD;
 
-.schedule {
+#schedule {
+	display: table;
+	border-collapse: collapse;
+	border: @border_style;
 	width: 100%;
-	min-width: 630px;
 }
 
 .timeslot {
+	display: table-row;
 	width: 100%;
 	border: @border_style;
 }
 
-.timeslot.small .timeslot-label,
-.timeslot.small .timeslot-item {
-	height: @timeslot_small_height;
-}
-
 .timeslot-label {
-	height: @timeslot_height;
+	display: table-cell;
 	// background-color: rgba(0, 0, 255, 0.2);
 	font-weight: 200;
-	width: 10%;
-	min-width: 60px;
-	display: inline-block;
 	text-align: left;
 	font-size: 120%;
-	padding: 0.5em;
-	color: #666;
+	padding: 0.5em 0.8em;
+	color: #333;
+	background-color: #EEE;
 }
 .timeslot-label time {
 	display: block;
 }
 
 .timeslot-items {
-	width: 89%;
+	display: table-cell;
+	border-left: @border_style;
+	width: 100%;
 	// background-color: rgba(0, 255, 0, 0.2);
-	display: inline-block;
 	vertical-align: top;
 }
 
 .timeslot-item {
-	height: @timeslot_height;
+	display: table-cell;
+	position: relative;
 	vertical-align: top;
 	// background-color: rgba(255,0,0,0.2);
-	display: inline-block;
-	width: 32%;
-	border-left: @border_style;
+	width: 33%;
 	padding: 0.5em;
+	font-weight: 300;
+	overflow: hidden;
+	cursor: default;
+	.nouserselect();
+}
+
+.timeslot-item + .timeslot-item {
+	border-left: @border_style;
 }
 
 .timeslot-item.spanning {
 	width: 100%;
+	border-left: @border_style;
+}
+
+.timeslot-item .colorstrip {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	transition: top 0.4s;
+	opacity: 0.7;
+}
+
+.timeslot-item:hover .colorstrip,
+.timeslot-item:focus .colorstrip,
+.timeslot-item:active .colorstrip {
+	top: 0;
+}
+
+
+.timeslot-item .colorstrip.color1 {
+	background-color: #6589c5;
+}
+.timeslot-item .colorstrip.color2 {
+	background-color: #149f5a;
+}
+.timeslot-item .colorstrip.color3 {
+	background-color: #f7c63f;
 }
 
 .timeslot-item h1 {
-	margin: 0 0 20px;
+	margin: 0 0 0.4em;
 	color: black;
-	font-weight: 300;
 	font-size: 1.25rem;
 }
 
 .timeslot-item .speaker {
-	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.timeslot-item .room {
+	font-size: 90%;
+	color: #666;
+	margin-top: 0.3em;
+}
 
 @media only screen and (min-width: 0px) and (max-width: 679px) {
-	.timeslot-item {
+	.timeslot-item:not(.spanning) {
 		display: block;
 		width: 100%;
-		height: auto;
+	}
+	.timeslot-item.empty {
+		display: none;
 	}
 	.timeslot-item + .timeslot-item {
+		border-left: none;
 		border-top: @border_style;
 	}
 }
 
-// .schedule_container {
-// 	overflow-x: auto;
-// 	width: 100%;
-// }
+// Detail dialogs
 
-// .schedule td, .schedule th {
-// 	padding: 0.4em;
-// }
-
-// .schedule .track {
-// 	width: 30%;
-// }
-
-// .schedule .speaker {
-// 	font-variant: small-caps;
-// 	display: block;
-// 	font-weight: normal;
-// }
-
-// .schedule tr:nth-child(even) th {
-// 	background-color: #F1F1F1;
-// }
-
-// .schedule tr.break td {
-// 	background-color: #555;
-// 	color: white;
-// 	text-align: center;
-// 	font-weight: 200;
-// }
-
-// .schedule td {
-// 	font-weight: bold;
-// }
-
-// .schedule th.time {
-// 	font-weight: 200;
-// }
-
-// .schedule th.track {
-// 	color: white;
-// }
-
-// .schedule th.track1 {
-// 	background-color: #da4a3e;
-// }
-
-// .schedule th.track2 {
-// 	background-color: #149f5a;
-// }
-
-// .schedule th.track3 {
-// 	background-color: #f7c63f;
-// }
-
-// .schedule tr:not(.break) td:not(.empty):hover {
-// 	background-color: #CBDAF3;
-// 	cursor: normal;
-// }
+.sessiondetails h1 {
+	line-height: 120%;
+}
+.sessiondetails .abstract {
+	margin-top: 1rem;
+}
+.sessiondetails .meta {
+	color: #666;
+}
+.sessiondetails .meta span {
+	margin-right: 2rem;
+	color: #000;
+}
+.sessiondetails .speakerlink {
+	margin-bottom: 0.3em;
+	color: #577EC0;
+}
+.sessiondetails .speakerlink:hover,
+.sessiondetails .speakerlink:focus {
+	color: #444;
+}

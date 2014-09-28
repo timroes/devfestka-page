@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 body {
 	margin: 0;
@@ -13,6 +14,13 @@ html,body {
 }
 p + p {
 	margin-top: 1em;
+}
+
+noscript {
+	display: block;
+	text-align: center;
+	font-size: 130%;
+	font-weight: 300;
 }
 
 address {

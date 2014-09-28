@@ -1,4 +1,4 @@
-angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate'])
+angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate', 'ngDialog'])
 .config(function($routeProvider) {
 	$routeProvider
 		.when('/info', {
@@ -6,7 +6,7 @@ angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate'])
 			templateUrl: 'home.html'
 		})
 		.when('/programm', {
-			controller: '',
+			controller: 'scheduleController',
 			templateUrl: 'programm.html'
 		})
 		.when('/impressum', {

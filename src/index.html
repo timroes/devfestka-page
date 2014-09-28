@@ -9,10 +9,13 @@
 	<script type="text/javascript" src="libs/angular.min.js"></script>
 	<script type="text/javascript" src="libs/angular-route.min.js"></script>
 	<script type="text/javascript" src="libs/angular-animate.min.js"></script>
+	<script type="text/javascript" src="libs/ngDialog.min.js"></script>
 	<script type="text/javascript" src="scripts/templates.js"></script>
 	<script type="text/javascript" src="scripts/app.min.js"></script>
 	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="libs/ngDialog.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/icons/css/icons.css">
 	<link rel="stylesheet" type="text/css" href="styles/app.css">
 </head>
@@ -32,13 +35,17 @@
 			</a>
 
 			<div class="items" ng-class="{ collapsed: !showNavigation }">
-				<a href="#{{item.url}}" ng-repeat="item in menu"><span class="top">{{ item.label }}</span></a>
+				<a href="#{{item.url}}" ng-repeat="item in menu"><span class="top" ng-bind="item.label"></span></a>
 			</div>
 		</div>
 		<div id="content">
 			<div ng-view class="fade ngview"></div>
 			<div class="clear"></div>
 		</div>
+
+		<noscript>
+			This page requires JavaScript. Please enable it for this page.
+		</noscript>
 	</div>
 
 </body>

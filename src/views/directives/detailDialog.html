@@ -1,0 +1,10 @@
+<div class="sessiondetails">
+	<h1>{{ session.title }}</h1>
+	<a ng-if="session.speaker" class="speakerlink" href="{{ session.speakerlink }}" target="_blank">{{ session.speaker | join:', ' }}</a>
+	<div class="meta" ng-if="session.room">
+		Raum: <span>{{ session.room }}</span>
+	</div>
+	<div class="abstract">
+	{{ session.abstract }}
+	</div>
+</div>
