@@ -47,24 +47,49 @@
 			"to": "11:30",
 			"sessions": [
 				{
-					"title": "Building Enterprise Application with AngularJS",
-					"speaker": "Christian Janz",
-					"speakerlink": "https://plus.google.com/+ChristianJanz",
-					"abstract": "Oft hört man die Aussage, dass man mit JavaScript keine professionellen Geschäftsanwendungen entwickeln kann. In dieser Session möchte ich versuchen, diese Aussage zu widerlegen. Hierzu werde ich zeigen, wie bewährte Konzepte, wie z.B. Continuous Integration, für eine AngularJS-Anwendung verwendet und umgesetzt werden können.",
+					"title": "To be announced",
+					"speaker": "",
+					"speakerlink": "",
+					"abstract": "TBD",
 					"room": "Audimax"
+				},
+				{
+					"title": "Effizientere Softwareentwicklung durch den Einsatz von Google Guava",
+					"speaker": "Peter Fichtner",
+					"speakerlink": "https://www.xing.com/profile/Peter_Fichtner",
+					"abstract": "Google Guava hat sich in der Java-Welt über die letzten Jahre von einer Bibliothek rund um das Thema Collections (ursprünglich noch unter dem Namen \"Google Collections\") zu einer vielseitigen Bibliothek entwickelt, die Java Entwickler über weite Bereiche bei ihrer täglichen Arbeit unterstützt. Neben dem Bereitstellen von funktionalen Ansätzen, auch ohne Java 8, bietet Guava eine breite Auswahl an Klassen um die Effizienz in der Java-Entwicklung zu steigern, was zu schlankerem Code und somit zu einer besseren Lesbarkeit und Wartbarkeit führt.",
+					"room": "A266"
+				},
+				{
+
 				}
 			]
 		},
+
 		{
 			"from": "11:30",
 			"to": "12:15",
 			"sessions": [
 				{
-					"title": "Advanced Building Blocks for your Geospatial Apps",
-					"speaker": "Eva Peters",
-					"speakerlink": "https://www.linkedin.com/pub/eva-peters/94/469/9a4",
-					"abstract": "Mobile devices are - by nature - designed for location-based apps and services. You can enrich your apps with geographic functionality such as geocoding, routing, mapping as well advanced geospatial analysis and real-time location-based messaging. Many developers make use of these diverse services that a handful geo-platforms expose through their APIs. There are no limits to the imagination for geo apps if we think apart from what standard APIs provide. What if the geographic service world would be highly customizable? You could build your own street network, use different attributes and algorithms for routing, use it mobile, online and offline. You could let people edit your maps, provide fine grained access and capabilities, and provide customized cartography. There are many more examples where using web and native geospatial building blocks for your applications is beneficial compared to only using standard platform services and functionalities. In this presentation, we will show you advanced and customized geospatial functionality beyond simple mapping and beyond standard services.",
+					"title": "Mobile Cross-Platform Game Development",
+					"speaker": ["Tim Reiter", "Daniel Reichert", "Alisa Jung" ],
+					"speakerlink": "https://plus.google.com/103180493488525231357/posts",
+					"abstract": "We start off by telling you about our experiences with mobile games, the benefits of cross-platform development and an overview of current mobile game engines / frameworks with their pros and cons. In the second half we will code a small game with the Unity engine and the Cocos2d-x framework that you will be able to run on Android and other platforms.",
 					"room": "Audimax"
+				},
+				{
+					"title": "Effizientere Softwareentwicklung durch den Einsatz von Google Guava",
+					"speaker": "Peter Fichtner",
+					"speakerlink": "https://www.xing.com/profile/Peter_Fichtner",
+					"abstract": "Google Guava hat sich in der Java-Welt über die letzten Jahre von einer Bibliothek rund um das Thema Collections (ursprünglich noch unter dem Namen \"Google Collections\") zu einer vielseitigen Bibliothek entwickelt, die Java Entwickler über weite Bereiche bei ihrer täglichen Arbeit unterstützt. Neben dem Bereitstellen von funktionalen Ansätzen, auch ohne Java 8, bietet Guava eine breite Auswahl an Klassen um die Effizienz in der Java-Entwicklung zu steigern, was zu schlankerem Code und somit zu einer besseren Lesbarkeit und Wartbarkeit führt.",
+					"room": "A266"
+				},
+				{
+					"title": "Fortgeschrittene GWT Best Practices",
+					"speaker": ["Ralf Klemmer", "Dr. André Janus"],
+					"speakerlink": "http://www.codecamp-gbr.de/",
+					"abstract": "Der Vortrag besteht aus zwei Teilen: Im 1. Teil werden die verschiedenen Methoden zur Client-Server-Kommunikation in GWT sowie deren Vor- und Nachteile in verschiedenen Einsatz-Szenarien dargestellt. Der 2. Teil befasst sich mit Continuous Integration und Continuous Delivery im GWT-Umfeld sowie deren Umsetzung mit Ant und Jenkins.",
+					"room": "A268"
 				}
 			]
 		},
@@ -89,17 +114,17 @@
 					"room": "Audimax"
 				},
 				{
-					"title": "Mobile Cross-Platform Game Development",
-					"speaker": ["Tim Reiter", "Daniel Reichert", "Alisa Jung" ],
-					"speakerlink": "https://plus.google.com/103180493488525231357/posts",
-					"abstract": "We start off by telling you about our experiences with mobile games, the benefits of cross-platform development and an overview of current mobile game engines / frameworks with their pros and cons. In the second half we will code a small game with the Unity engine and the Cocos2d-x framework that you will be able to run on Android and other platforms.",
+					"title": "AIDE and Android Wear",
+					"speaker": "Dennis Strein",
+					"speakerlink": "https://plus.google.com/+Android-IDE/posts",
+					"abstract": "Develop Android Wear apps with AIDE, the on-device Android IDE. All you need is your Smartphone (or Tablet) with AIDE and a smartwatch to build the next Android Wear killer app.",
 					"room": "A266"
 				},
 				{
-					"title": "How we use AppEngine @ CrowdAppz",
-					"speaker": "CrowdAppz",
-					"speakerlink": "http://www.crowdappz.com",
-					"abstract": "We would like to present how to use Google Appengine in combination with Google Cloud Storage and Datastore to develop a scalable backend for mobile applications. As a use case we will present our app Drop which utilizes these technologies.",
+					"title": "Google Play Game Services - Mobile Gaming made social",
+					"speaker": "Daniel Bälz",
+					"speakerlink": "https://plus.google.com/+DanielB%C3%A4lz",
+					"abstract": "Google Play Game Services bietet Spieleentwicklern interessante Funktionen für ihre Spiele. Dies umfasst unter anderem Achievements, Bestenlisten, Multiplayer-Unterstützung und das Speichern von Spielständen in der Cloud. Im Vortrag wird ein Überblick über diese Möglichkeiten gegeben und die Verwendung unter Android erläutert.",
 					"room": "A268"
 				}
 			]
@@ -116,17 +141,17 @@
 					"room": "Audimax"
 				},
 				{
-					"title": "AIDE and Android Wear",
-					"speaker": "Dennis Strein",
-					"speakerlink": "https://plus.google.com/+Android-IDE/posts",
-					"abstract": "Develop Android Wear apps with AIDE, the on-device Android IDE. All you need is your Smartphone (or Tablet) with AIDE and a smartwatch to build the next Android Wear killer app.",
+					"title": "blukii - wearables, beacons, sensors & tags",
+					"speaker": "Matthias Schneider",
+					"speakerlink": "http://www.blukii.com/de/",
+					"abstract": "blukii is an open hardware platform containing wearables, beacons, sensors and tags. With its software libraries for the different operating systems, developers can easily create their own solutions based on the blukii hardware. The session will cover an overview of the different features of the blukii platform, also showing some demos.",
 					"room": "A266"
 				},
 				{
-					"title": "Fortgeschrittene GWT Best Practices",
-					"speaker": ["Ralf Klemmer", "Dr. André Janus"],
-					"speakerlink": "http://www.codecamp-gbr.de/",
-					"abstract": "Der Vortrag besteht aus zwei Teilen: Im 1. Teil werden die verschiedenen Methoden zur Client-Server-Kommunikation in GWT sowie deren Vor- und Nachteile in verschiedenen Einsatz-Szenarien dargestellt. Der 2. Teil befasst sich mit Continuous Integration und Continuous Delivery im GWT-Umfeld sowie deren Umsetzung mit Ant und Jenkins.",
+					"title": "How we use AppEngine @ CrowdAppz",
+					"speaker": "CrowdAppz",
+					"speakerlink": "http://www.crowdappz.com",
+					"abstract": "We would like to present how to use Google Appengine in combination with Google Cloud Storage and Datastore to develop a scalable backend for mobile applications. As a use case we will present our app Drop which utilizes these technologies.",
 					"room": "A268"
 				}
 			]
@@ -145,10 +170,10 @@
 			"to": "16:15",
 			"sessions": [
 				{
-					"title": "blukii - wearables, beacons, sensors & tags",
-					"speaker": "Matthias Schneider",
-					"speakerlink": "http://www.blukii.com/de/",
-					"abstract": "blukii is an open hardware platform containing wearables, beacons, sensors and tags. With its software libraries for the different operating systems, developers can easily create their own solutions based on the blukii hardware. The session will cover an overview of the different features of the blukii platform, also showing some demos.",
+					"title": "Building Enterprise Application with AngularJS",
+					"speaker": "Christian Janz",
+					"speakerlink": "https://plus.google.com/+ChristianJanz",
+					"abstract": "Oft hört man die Aussage, dass man mit JavaScript keine professionellen Geschäftsanwendungen entwickeln kann. In dieser Session möchte ich versuchen, diese Aussage zu widerlegen. Hierzu werde ich zeigen, wie bewährte Konzepte, wie z.B. Continuous Integration, für eine AngularJS-Anwendung verwendet und umgesetzt werden können.",
 					"room": "Audimax"
 				},
 				{
@@ -159,10 +184,10 @@
 					"room": "A266"
 				},
 				{
-					"title": "Android Studio & Gradle",
-					"speaker": "Tim Roes",
-					"speakerlink": "https://www.timroes.de",
-					"abstract": "TBD",
+					"title": "Kurzvorträge",
+					"speaker": "",
+					"speakerlink": "",
+					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr. Wenn du auch ein interessantes Thema hast und dieses gerne vortragen würdest, findest du das entsprechende Formular unter dem Programm. Sobald alle Plätze belegt sind, wird die Liste der Kurzvorträge hier veröffentlicht.",
 					"room": "A268"
 				}
 			]
@@ -179,27 +204,27 @@
 					"room": "Audimax"
 				},
 				{
-					"title": "Google Enterprise",
-					"speaker": "Clemens Düpmeier",
-					"speakerlink": "https://plus.google.com/u/0/+ClemensD%C3%BCpmeier/posts",
-					"abstract": "",
+					"title": "Advanced Building Blocks for your Geospatial Apps",
+					"speaker": "Eva Peters",
+					"speakerlink": "https://www.linkedin.com/pub/eva-peters/94/469/9a4",
+					"abstract": "Mobile devices are - by nature - designed for location-based apps and services. You can enrich your apps with geographic functionality such as geocoding, routing, mapping as well advanced geospatial analysis and real-time location-based messaging. Many developers make use of these diverse services that a handful geo-platforms expose through their APIs. There are no limits to the imagination for geo apps if we think apart from what standard APIs provide. What if the geographic service world would be highly customizable? You could build your own street network, use different attributes and algorithms for routing, use it mobile, online and offline. You could let people edit your maps, provide fine grained access and capabilities, and provide customized cartography. There are many more examples where using web and native geospatial building blocks for your applications is beneficial compared to only using standard platform services and functionalities. In this presentation, we will show you advanced and customized geospatial functionality beyond simple mapping and beyond standard services.",
 					"room": "A266"
 				},
 				{
-					"title": "",
+					"title": "Kurzvorträge",
 					"speaker": "",
 					"speakerlink": "",
-					"abstract": "",
-					"room": ""
+					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr. Wenn du auch ein interessantes Thema hast und dieses gerne vortragen würdest, findest du das entsprechende Formular unter dem Programm. Sobald alle Plätze belegt sind, wird die Liste der Kurzvorträge hier veröffentlicht.",
+					"room": "A268"
 				}
 			]
 		},
 		{
 			"from": "17:00",
-			"to": "19:00",
+			"to": "20:00",
 			"sessions": [
 				{
-					"title": "DevFest After Work Party - meet the Organizers and Speakers",
+					"title": "DevFest After Work Party & Gameshow - meet the Organizers and Speakers",
 					"speaker": "",
 					"speakerlink": "",
 					"abstract": "",
