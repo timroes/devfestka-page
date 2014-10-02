@@ -1,6 +1,8 @@
 <div class="timeslot-item" ng-click="showDetails()" ng-class="{ empty: !session.title }">
-	<div class="colorstrip" ng-class="roomColor()"></div>
-	<h1>{{ session.title }}</h1>
-	<span class="speaker" ng-if="session.speaker">{{ session.speaker | join:', ' }}</span>
-	<div class="room">{{ session.room }}</div>
+	<div class="timeslot-item__content">
+		<div class="colorstrip" ng-class="roomColor()"></div>
+		<h1>{{ session.title }}</h1>
+		<span class="speaker" ng-if="session.speaker">{{ session.speaker | join:', ' }}</span>
+		<div class="room">{{ session.room }}</div>
+	</div>
 </div>

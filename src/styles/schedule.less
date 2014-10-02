@@ -53,7 +53,6 @@ h2.date {
 	vertical-align: top;
 	// background-color: rgba(255,0,0,0.2);
 	width: 33%;
-	padding: 0.5em;
 	font-weight: 300;
 	overflow: hidden;
 	cursor: default;
@@ -62,6 +61,11 @@ h2.date {
 
 .timeslot-item + .timeslot-item {
 	border-left: @border_style;
+}
+
+.timeslot-item__content {
+	position: relative;
+	padding: 0.5em;
 }
 
 .timeslot-item.spanning {
