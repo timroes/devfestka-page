@@ -35,7 +35,7 @@
 			</a>
 
 			<div class="items" ng-class="{ collapsed: !showNavigation }">
-				<a href="#{{item.url}}" ng-repeat="item in menu"><span class="top" ng-bind="item.label"></span></a>
+				<a href="#{{item.url}}" ng-repeat="item in menu" click-blur><span class="top" ng-bind="item.label"></span></a>
 			</div>
 		</div>
 		<div id="content">
