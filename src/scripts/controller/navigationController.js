@@ -15,4 +15,8 @@ angular.module('devfest')
 		$scope.showNavigation = !$scope.showNavigation;
 	};
 
+	$scope.$on('$routeChangeStart', function() {
+		$scope.showNavigation = false;
+	});
+
 });

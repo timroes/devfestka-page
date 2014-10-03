@@ -30,7 +30,7 @@
 			<span class="sr-only">Menü:</span>
 			<div id="countdown"></div>
 
-			<a href="#" class="menutoggle" ng-click="toggleNavigation($event)">
+			<a href="#" class="menutoggle" ng-click="toggleNavigation($event)" click-blur>
 				<span class="top">Navigation</span>
 			</a>
 
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div id="content">
-			<div ng-view class="fade ngview"></div>
+			<div ng-view class="fade ngview" autoscroll></div>
 			<div class="clear"></div>
 		</div>
 
