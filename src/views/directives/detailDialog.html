@@ -1,8 +1,13 @@
 <div class="sessiondetails">
 	<h1>{{ session.title }}</h1>
 	<a ng-if="session.speaker" class="speakerlink" href="{{ session.speakerlink }}" target="_blank">{{ session.speaker | join:', ' }}</a>
-	<div class="meta" ng-if="session.room">
-		Raum: <span>{{ session.room }}</span>
+	<div class="sessmeta" ng-if="session.room">
+		<span class="sessmeta__label sessdialog__room">
+			Raum: <span class="sessmeta__text">{{ session.room }}</span>
+		</span>
+		<span class="sessmeta__label sessdialog__lang" ng-show="session.lang">
+			Sprache: <span class="sessmeta__text">{{ session.lang | lang }}</span>
+		</span>
 	</div>
 	<div class="abstract">
 	{{ session.abstract }}

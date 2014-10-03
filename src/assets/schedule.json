@@ -15,6 +15,7 @@
 			"sessions": [
 				{
 					"title": "Begrüßung",
+					"lang": "de",
 					"speaker": "GDG Karlsruhe",
 					"room": "Audimax"
 				}
@@ -26,6 +27,7 @@
 			"sessions": [
 				{
 					"title": "Why do we need more Nerds? (Keynote)",
+					"lang": "de",
 					"speaker": "Dominik Helleberg",
 					"speakerlink": "https://plus.google.com/+DominikHelleberg",
 					"abstract": "Keynote",
@@ -55,6 +57,7 @@
 				},
 				{
 					"title": "Effizientere Softwareentwicklung durch den Einsatz von Google Guava",
+					"lang": "de",
 					"speaker": "Peter Fichtner",
 					"speakerlink": "https://www.xing.com/profile/Peter_Fichtner",
 					"abstract": "Google Guava hat sich in der Java-Welt über die letzten Jahre von einer Bibliothek rund um das Thema Collections (ursprünglich noch unter dem Namen \"Google Collections\") zu einer vielseitigen Bibliothek entwickelt, die Java Entwickler über weite Bereiche bei ihrer täglichen Arbeit unterstützt. Neben dem Bereitstellen von funktionalen Ansätzen, auch ohne Java 8, bietet Guava eine breite Auswahl an Klassen um die Effizienz in der Java-Entwicklung zu steigern, was zu schlankerem Code und somit zu einer besseren Lesbarkeit und Wartbarkeit führt.",
@@ -72,6 +75,7 @@
 			"sessions": [
 				{
 					"title": "Mobile Cross-Platform Game Development",
+					"lang": "de",
 					"speaker": ["Tim Reiter", "Daniel Reichert", "Alisa Jung" ],
 					"speakerlink": "https://plus.google.com/103180493488525231357/posts",
 					"abstract": "We start off by telling you about our experiences with mobile games, the benefits of cross-platform development and an overview of current mobile game engines / frameworks with their pros and cons. In the second half we will code a small game with the Unity engine and the Cocos2d-x framework that you will be able to run on Android and other platforms.",
@@ -79,6 +83,7 @@
 				},
 				{
 					"title": "Effizientere Softwareentwicklung durch den Einsatz von Google Guava",
+					"lang": "de",
 					"speaker": "Peter Fichtner",
 					"speakerlink": "https://www.xing.com/profile/Peter_Fichtner",
 					"abstract": "Google Guava hat sich in der Java-Welt über die letzten Jahre von einer Bibliothek rund um das Thema Collections (ursprünglich noch unter dem Namen \"Google Collections\") zu einer vielseitigen Bibliothek entwickelt, die Java Entwickler über weite Bereiche bei ihrer täglichen Arbeit unterstützt. Neben dem Bereitstellen von funktionalen Ansätzen, auch ohne Java 8, bietet Guava eine breite Auswahl an Klassen um die Effizienz in der Java-Entwicklung zu steigern, was zu schlankerem Code und somit zu einer besseren Lesbarkeit und Wartbarkeit führt.",
@@ -86,6 +91,7 @@
 				},
 				{
 					"title": "Fortgeschrittene GWT Best Practices",
+					"lang": "de",
 					"speaker": ["Ralf Klemmer", "Dr. André Janus"],
 					"speakerlink": "http://www.codecamp-gbr.de/",
 					"abstract": "Der Vortrag besteht aus zwei Teilen: Im 1. Teil werden die verschiedenen Methoden zur Client-Server-Kommunikation in GWT sowie deren Vor- und Nachteile in verschiedenen Einsatz-Szenarien dargestellt. Der 2. Teil befasst sich mit Continuous Integration und Continuous Delivery im GWT-Umfeld sowie deren Umsetzung mit Ant und Jenkins.",
@@ -108,6 +114,7 @@
 			"sessions": [
 				{
 					"title": "Clean Unit Test Patterns",
+					"lang": "de",
 					"speaker": "Frank Appel",
 					"speakerlink": "https://plus.google.com/113187713867352307061/posts",
 					"abstract": "Das Entwickeln von JUnit Tests ist nicht so trivial, wie es auf den ersten Blick erscheinen mag. Ohne die nötige Sorgfalt erstellt, können Tests die Wartung und weitere Entwicklung einer Software stark behindern. Daher erklärt dieser Vortrag, wie man saubere und gut strukturierte Unit Tests schreibt, wie diese eine Unit von ihren Abhängigkeiten isolieren und so den Pflegeaufwand auch bei späteren Änderungsanforderungen minimieren.",
@@ -115,6 +122,7 @@
 				},
 				{
 					"title": "AIDE and Android Wear",
+					"lang": "de",
 					"speaker": "Dennis Strein",
 					"speakerlink": "https://plus.google.com/+Android-IDE/posts",
 					"abstract": "Develop Android Wear apps with AIDE, the on-device Android IDE. All you need is your Smartphone (or Tablet) with AIDE and a smartwatch to build the next Android Wear killer app.",
@@ -122,6 +130,7 @@
 				},
 				{
 					"title": "Google Play Game Services - Mobile Gaming made social",
+					"lang": "de",
 					"speaker": "Daniel Bälz",
 					"speakerlink": "https://plus.google.com/+DanielB%C3%A4lz",
 					"abstract": "Google Play Game Services bietet Spieleentwicklern interessante Funktionen für ihre Spiele. Dies umfasst unter anderem Achievements, Bestenlisten, Multiplayer-Unterstützung und das Speichern von Spielständen in der Cloud. Im Vortrag wird ein Überblick über diese Möglichkeiten gegeben und die Verwendung unter Android erläutert.",
@@ -135,6 +144,7 @@
 			"sessions": [
 				{
 					"title": "Automatische Testfallgenerierung oder \"Wie die Evolution den Affen zum Tester macht\"",
+					"lang": "de",
 					"speaker": "Dr. Jeremias Rößler",
 					"speakerlink": "https://plus.google.com/u/0/113734370356119299787",
 					"abstract": "Software-Fehler kosten die deutsche Wirtschaft bis zu 10 Mrd Euro im Jahr. Deshalb macht Testen derzeit ca. 20% der Kosten einer neuen Software aus, Tendenz steigen. Alleine für Java-Software sind das in Deutschland ca. 3,4 Mrd. Euro im Jahr. Diese Kosten entstehen hauptsächlich durch manuelles Testen bzw. manuelle Testfallerstellung. Der Automatisierungsgrad beim Testen liegt derzeit bei ca. 15%. An mehreren Beispielen aus der Praxis werden Möglichkeiten aufgezeigt automatisiertes Testen bzw. automatisierte Testfallerstellung zu nutzen, um sicherheitskritische Fehler zu finden.",
@@ -142,6 +152,7 @@
 				},
 				{
 					"title": "blukii - wearables, beacons, sensors & tags",
+					"lang": "de",
 					"speaker": "Matthias Schneider",
 					"speakerlink": "http://www.blukii.com/de/",
 					"abstract": "blukii is an open hardware platform containing wearables, beacons, sensors and tags. With its software libraries for the different operating systems, developers can easily create their own solutions based on the blukii hardware. The session will cover an overview of the different features of the blukii platform, also showing some demos.",
@@ -149,6 +160,7 @@
 				},
 				{
 					"title": "How we use AppEngine @ CrowdAppz",
+					"lang": "de",
 					"speaker": "CrowdAppz",
 					"speakerlink": "http://www.crowdappz.com",
 					"abstract": "We would like to present how to use Google Appengine in combination with Google Cloud Storage and Datastore to develop a scalable backend for mobile applications. As a use case we will present our app Drop which utilizes these technologies.",
@@ -171,6 +183,7 @@
 			"sessions": [
 				{
 					"title": "Building Enterprise Application with AngularJS",
+					"lang": "de",
 					"speaker": "Christian Janz",
 					"speakerlink": "https://plus.google.com/+ChristianJanz",
 					"abstract": "Oft hört man die Aussage, dass man mit JavaScript keine professionellen Geschäftsanwendungen entwickeln kann. In dieser Session möchte ich versuchen, diese Aussage zu widerlegen. Hierzu werde ich zeigen, wie bewährte Konzepte, wie z.B. Continuous Integration, für eine AngularJS-Anwendung verwendet und umgesetzt werden können.",
@@ -178,6 +191,7 @@
 				},
 				{
 					"title": "Google Enterprise",
+					"lang": "de",
 					"speaker": "Clemens Düpmeier",
 					"speakerlink": "https://plus.google.com/u/0/+ClemensD%C3%BCpmeier/posts",
 					"abstract": "",
@@ -198,6 +212,7 @@
 			"sessions": [
 				{
 					"title": "Polymer - Die Zukunft kann so süß sein",
+					"lang": "de",
 					"speaker": "Mitko Tschimev",
 					"speakerlink": "https://plus.google.com/u/0/115359495435714348697/posts",
 					"abstract": "Wir alle haben bereits von Web Components gehört. Doch was steckt wirklich dahinter und was hat es mit Polymer auf sich? Es wird auf die Techniken von Polymer eingegangen und wie weit diese bereits nutzbar sind. Die Kompatibilität ist natürlich auch ein ganz wichtiges Thema und darf nicht fehlen. Des weiteren wird der wichtige Aspekt Performance in diesem Bereich etwas genauer unter die Lupe genommen. ",
@@ -205,6 +220,7 @@
 				},
 				{
 					"title": "Advanced Building Blocks for your Geospatial Apps",
+					"lang": "de",
 					"speaker": "Eva Peters",
 					"speakerlink": "https://www.linkedin.com/pub/eva-peters/94/469/9a4",
 					"abstract": "Mobile devices are - by nature - designed for location-based apps and services. You can enrich your apps with geographic functionality such as geocoding, routing, mapping as well advanced geospatial analysis and real-time location-based messaging. Many developers make use of these diverse services that a handful geo-platforms expose through their APIs. There are no limits to the imagination for geo apps if we think apart from what standard APIs provide. What if the geographic service world would be highly customizable? You could build your own street network, use different attributes and algorithms for routing, use it mobile, online and offline. You could let people edit your maps, provide fine grained access and capabilities, and provide customized cartography. There are many more examples where using web and native geospatial building blocks for your applications is beneficial compared to only using standard platform services and functionalities. In this presentation, we will show you advanced and customized geospatial functionality beyond simple mapping and beyond standard services.",

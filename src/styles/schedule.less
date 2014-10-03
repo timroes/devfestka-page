@@ -68,6 +68,13 @@ h2.date {
 	padding: 0.5em;
 }
 
+.timeslot-item__lang {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #AAA;
+	font-size: 70%;
+	text-transform: uppercase;
+}
+
 .timeslot-item.spanning {
 	width: 100%;
 	border-left: @border_style;
@@ -138,9 +145,6 @@ h2.date {
 .sessiondetails .abstract {
 	margin-top: 1rem;
 }
-.sessiondetails .meta {
-	color: #666;
-}
 .sessiondetails .meta span {
 	margin-right: 2rem;
 	color: #000;
@@ -152,4 +156,16 @@ h2.date {
 .sessiondetails .speakerlink:hover,
 .sessiondetails .speakerlink:focus {
 	color: #444;
+}
+
+.sessmeta__label {
+	color: #666;
+}
+
+.sessmeta__label:not(:first-child) {
+	margin-left: 1.5em;
+}
+
+.sessmeta__text {
+	color: #000;
 }
