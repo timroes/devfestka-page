@@ -49,10 +49,11 @@
 			"to": "11:30",
 			"sessions": [
 				{
-					"title": "To be announced",
-					"speaker": "",
-					"speakerlink": "",
-					"abstract": "TBD",
+					"title": "App Distribution and Revenue Models",
+					"lang": "de",
+					"speaker": "Maxim Mai",
+					"speakerlink": "https://plus.google.com/+MaximMaiGoogle",
+					"abstract": "The goal of the presentation is to share tips, tricks and learnings concerning app distribution and revenue models. I will be using real life examples from my work with German app developers. The talk will cover strategy and technical aspects. Google products to be covered are Play and AdMob.",
 					"room": "Audimax"
 				},
 				{
