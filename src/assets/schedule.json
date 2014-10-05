@@ -64,7 +64,12 @@
 					"room": "A266"
 				},
 				{
-
+					"title": "How we use AppEngine @ CrowdAppz",
+					"lang": "de",
+					"speaker": "CrowdAppz",
+					"speakerlink": "http://www.crowdappz.com",
+					"abstract": "We would like to present how to use Google Appengine in combination with Google Cloud Storage and Datastore to develop a scalable backend for mobile applications. As a use case we will present our app Drop which utilizes these technologies.",
+					"room": "A268"
 				}
 			]
 		},
@@ -159,11 +164,11 @@
 					"room": "A266"
 				},
 				{
-					"title": "How we use AppEngine @ CrowdAppz",
-					"lang": "de",
-					"speaker": "CrowdAppz",
-					"speakerlink": "http://www.crowdappz.com",
-					"abstract": "We would like to present how to use Google Appengine in combination with Google Cloud Storage and Datastore to develop a scalable backend for mobile applications. As a use case we will present our app Drop which utilizes these technologies.",
+					"title": "Optimization strategies for mobile game development",
+					"lang": "en",
+					"speaker": "Maya Posch",
+					"speakerlink": "https://plus.google.com/+MayaPosch/posts",
+					"abstract": "The approaches to optimization one can take to game development on a mobile platform like Android before, during and after development.The effect of certain implementations on overall performance.",
 					"room": "A268"
 				}
 			]
