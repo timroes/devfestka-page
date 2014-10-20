@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src: url('../font/icons.eot?71602906');
-  src: url('../font/icons.eot?71602906#iefix') format('embedded-opentype'),
-       url('../font/icons.woff?71602906') format('woff'),
-       url('../font/icons.ttf?71602906') format('truetype'),
-       url('../font/icons.svg?71602906#icons') format('svg');
+  src: url('../font/icons.eot?33820272');
+  src: url('../font/icons.eot?33820272#iefix') format('embedded-opentype'),
+       url('../font/icons.woff?33820272') format('woff'),
+       url('../font/icons.ttf?33820272') format('truetype'),
+       url('../font/icons.svg?33820272#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?71602906#icons') format('svg');
+    src: url('../font/icons.svg?33820272#icons') format('svg');
   }
 }
 */
@@ -58,3 +58,4 @@
 .icon-ticket:before { content: '\e805'; } /* '' */
 .icon-file-pdf:before { content: '\e806'; } /* '' */
 .icon-newspaper:before { content: '\e807'; } /* '' */
+.icon-doc:before { content: '\e808'; } /* '' */
