@@ -204,10 +204,11 @@
 					"room": "A266"
 				},
 				{
-					"title": "Kurzvorträge",
-					"speaker": "",
-					"speakerlink": "",
-					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr. Wenn du auch ein interessantes Thema hast und dieses gerne vortragen würdest, findest du das entsprechende Formular unter dem Programm. Sobald alle Plätze belegt sind, wird die Liste der Kurzvorträge hier veröffentlicht.",
+					"title": "Einstieg in die Hybrid App Entwicklung",
+					"lang": "de",
+					"speaker": "Gregor Biswanger",
+					"speakerlink": "https://plus.google.com/+GregorBiswanger",
+					"abstract": "Die Entwicklung von Apps ist nicht einfach und jede \"Systemwelt\" hat ihre eigenen Tools und Anforderungen. Ob mit Java und Eclipse für Android, mit Objective-C und Xcode für iOS, oder mit den Microsoft-Tools für die Windows-Welt. Bei diesem Vortrag lernen Sie die vielfältigen Möglichkeiten der App-Entwicklung für alle gängigen Plattformen mit nur einer Programmiersprache kennen: HTML5 und JavaScript. Sie steigen mit den Grundlagen des Intel XDK ein und werden dann mit den wichtigsten Frameworks und Vorgehensweisen vertraut. Mit diesen Infos steigen Sie rasch auf zum versierten Cross-Plattform Entwickler.",
 					"room": "A268"
 				}
 			]
@@ -234,9 +235,10 @@
 				},
 				{
 					"title": "Kurzvorträge",
+					"lang": "de",
 					"speaker": "",
 					"speakerlink": "",
-					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr. Wenn du auch ein interessantes Thema hast und dieses gerne vortragen würdest, findest du das entsprechende Formular unter dem Programm. Sobald alle Plätze belegt sind, wird die Liste der Kurzvorträge hier veröffentlicht.",
+					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr.\n\n- An Introduction to Dart (Moritz Post)\n- Javascript im Backend mit NodeJS (Martina Kraus)\n- Zero Install (Bastian Eicher)",
 					"room": "A268"
 				}
 			]
