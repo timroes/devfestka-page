@@ -9,9 +9,7 @@
 			Sprache: <span class="sessmeta__text">{{ session.lang | lang }}</span>
 		</span>
 	</div>
-	<div class="abstract">
-	{{ session.abstract }}
-	</div>
+	<div class="abstract" ng-bind-html="session.abstract"></div>
 	<a class="session__slides" href="{{session.slides}}" ng-show="session.slides">
 		<i class="icon-doc"></i>
 		Präsentation herunterladen

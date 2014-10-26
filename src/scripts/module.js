@@ -1,4 +1,4 @@
-angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate', 'ngDialog'])
+angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate', 'ngDialog', 'ngSanitize'])
 .config(function($routeProvider) {
 	$routeProvider
 		.when('/info', {

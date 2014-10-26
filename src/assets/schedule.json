@@ -69,8 +69,9 @@
 					"lang": "de",
 					"speaker": "CrowdAppz",
 					"speakerlink": "http://www.crowdappz.com",
-					"abstract": "We would like to present how to use Google Appengine in combination with Google Cloud Storage and Datastore to develop a scalable backend for mobile applications. As a use case we will present our app Drop which utilizes these technologies.",
-					"room": "A268"
+					"abstract": "In this session we give you an overview on several services of the Google Cloud Platform and showcase an Android application utilizing these technologies. We cover technologies, such as Google App Engine, Cloud Endpoints, Cloud Storage, Cloud Datastore and Google Cloud Messaging (GCM). Furthermore, we showcase a combination of our social Android application - Drop - and an associated Android Wear companion leveraging these services to communicate with our scalable backend for mobile applications.",
+					"room": "A268",
+					"slides": "assets/slides/how-we-use-google-cloud-platform.pdf"
 				}
 			]
 		},
@@ -85,7 +86,8 @@
 					"speaker": ["Tim Reiter", "Daniel Reichert", "Alisa Jung" ],
 					"speakerlink": "https://plus.google.com/103180493488525231357/posts",
 					"abstract": "We start off by telling you about our experiences with mobile games, the benefits of cross-platform development and an overview of current mobile game engines / frameworks with their pros and cons. In the second half we will code a small game with the Unity engine and the Cocos2d-x framework that you will be able to run on Android and other platforms.",
-					"room": "Audimax"
+					"room": "Audimax",
+					"slides": "assets/slides/CrossPlatformMobileGameDevelopment.pdf"
 				},
 				{
 					"title": "Effizientere Softwareentwicklung durch den Einsatz von Google Guava",
@@ -101,7 +103,8 @@
 					"speaker": ["Ralf Klemmer", "Dr. André Janus"],
 					"speakerlink": "http://www.codecamp-gbr.de/",
 					"abstract": "Der Vortrag besteht aus zwei Teilen: Im 1. Teil werden die verschiedenen Methoden zur Client-Server-Kommunikation in GWT sowie deren Vor- und Nachteile in verschiedenen Einsatz-Szenarien dargestellt. Der 2. Teil befasst sich mit Continuous Integration und Continuous Delivery im GWT-Umfeld sowie deren Umsetzung mit Ant und Jenkins.",
-					"room": "A268"
+					"room": "A268",
+					"slides": "assets/slides/fortgeschrittene-gwt-best-practices.pdf"
 				}
 			]
 		},
@@ -124,7 +127,8 @@
 					"speaker": "Frank Appel",
 					"speakerlink": "https://plus.google.com/113187713867352307061/posts",
 					"abstract": "Das Entwickeln von JUnit Tests ist nicht so trivial, wie es auf den ersten Blick erscheinen mag. Ohne die nötige Sorgfalt erstellt, können Tests die Wartung und weitere Entwicklung einer Software stark behindern. Daher erklärt dieser Vortrag, wie man saubere und gut strukturierte Unit Tests schreibt, wie diese eine Unit von ihren Abhängigkeiten isolieren und so den Pflegeaufwand auch bei späteren Änderungsanforderungen minimieren.",
-					"room": "Audimax"
+					"room": "Audimax",
+					"slides": "assets/slides/clean-unit-test-patterns.pdf"
 				},
 				{
 					"title": "AIDE and Android Wear",
@@ -132,7 +136,8 @@
 					"speaker": "Dennis Strein",
 					"speakerlink": "https://plus.google.com/+Android-IDE/posts",
 					"abstract": "Develop Android Wear apps with AIDE, the on-device Android IDE. All you need is your Smartphone (or Tablet) with AIDE and a smartwatch to build the next Android Wear killer app.",
-					"room": "A266"
+					"room": "A266",
+					"slides": "assets/slides/aide-and-android-wear.pdf"
 				},
 				{
 					"title": "Google Play Game Services - Mobile Gaming made social",
@@ -140,7 +145,8 @@
 					"speaker": "Daniel Bälz",
 					"speakerlink": "https://plus.google.com/+DanielB%C3%A4lz",
 					"abstract": "Google Play Game Services bietet Spieleentwicklern interessante Funktionen für ihre Spiele. Dies umfasst unter anderem Achievements, Bestenlisten, Multiplayer-Unterstützung und das Speichern von Spielständen in der Cloud. Im Vortrag wird ein Überblick über diese Möglichkeiten gegeben und die Verwendung unter Android erläutert.",
-					"room": "A268"
+					"room": "A268",
+					"slides": "assets/slides/google-play-game-services.pdf"
 				}
 			]
 		},
@@ -154,7 +160,8 @@
 					"speaker": "Dr. Jeremias Rößler",
 					"speakerlink": "https://plus.google.com/u/0/113734370356119299787",
 					"abstract": "Software-Fehler kosten die deutsche Wirtschaft bis zu 10 Mrd Euro im Jahr. Deshalb macht Testen derzeit ca. 20% der Kosten einer neuen Software aus, Tendenz steigen. Alleine für Java-Software sind das in Deutschland ca. 3,4 Mrd. Euro im Jahr. Diese Kosten entstehen hauptsächlich durch manuelles Testen bzw. manuelle Testfallerstellung. Der Automatisierungsgrad beim Testen liegt derzeit bei ca. 15%. An mehreren Beispielen aus der Praxis werden Möglichkeiten aufgezeigt automatisiertes Testen bzw. automatisierte Testfallerstellung zu nutzen, um sicherheitskritische Fehler zu finden.",
-					"room": "Audimax"
+					"room": "Audimax",
+					"slides": "assets/slides/automatische-testfallgenerierung.pdf"
 				},
 				{
 					"title": "blukii - wearables, beacons, sensors & tags",
@@ -170,7 +177,8 @@
 					"speaker": "Maya Posch",
 					"speakerlink": "https://plus.google.com/+MayaPosch/posts",
 					"abstract": "The approaches to optimization one can take to game development on a mobile platform like Android before, during and after development.The effect of certain implementations on overall performance.",
-					"room": "A268"
+					"room": "A268",
+					"slides": "assets/slides/optimization_strategies_for_mobile_game_development.pdf"
 				}
 			]
 		},
@@ -223,7 +231,8 @@
 					"speaker": "Mitko Tschimev",
 					"speakerlink": "https://plus.google.com/u/0/115359495435714348697/posts",
 					"abstract": "Wir alle haben bereits von Web Components gehört. Doch was steckt wirklich dahinter und was hat es mit Polymer auf sich? Es wird auf die Techniken von Polymer eingegangen und wie weit diese bereits nutzbar sind. Die Kompatibilität ist natürlich auch ein ganz wichtiges Thema und darf nicht fehlen. Des weiteren wird der wichtige Aspekt Performance in diesem Bereich etwas genauer unter die Lupe genommen. ",
-					"room": "Audimax"
+					"room": "Audimax",
+					"slides": "http://slides.com/mitkotschimev/polymer-die-zukunft-kann-so-suss-sein"
 				},
 				{
 					"title": "Advanced Building Blocks for your Geospatial Apps",
@@ -238,7 +247,7 @@
 					"lang": "de",
 					"speaker": "",
 					"speakerlink": "",
-					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr.\n\n- An Introduction to Dart (Moritz Post)\n- Javascript im Backend mit NodeJS (Martina Kraus)\n- Zero Install (Bastian Eicher)",
+					"abstract": "Eine Reihe von 15 Minuten Vorträgen, Projektpräsentationen und mehr.\n\n- <a href=\"assets/slides/an-introduction-to-dart.pdf\">An Introduction to Dart (Moritz Post)</a>\n- <a href=\"assets/slides/nodejs.pdf\">Javascript im Backend mit NodeJS (Martina Kraus)</a>\n- <a href=\"assets/slides/0install.pdf\">Zero Install (Bastian Eicher)</a>",
 					"room": "A268"
 				}
 			]
