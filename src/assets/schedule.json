@@ -54,7 +54,8 @@
 					"speaker": "Maxim Mai",
 					"speakerlink": "https://plus.google.com/+MaximMaiGoogle",
 					"abstract": "The goal of the presentation is to share tips, tricks and learnings concerning app distribution and revenue models. I will be using real life examples from my work with German app developers. The talk will cover strategy and technical aspects. Google products to be covered are Play and AdMob.",
-					"room": "Audimax"
+					"room": "Audimax",
+					"slides": "http://bit.ly/1xhhyX7"
 				},
 				{
 					"title": "Effizientere Softwareentwicklung durch den Einsatz von Google Guava",
@@ -169,7 +170,8 @@
 					"speaker": "Matthias Schneider",
 					"speakerlink": "http://www.blukii.com/de/",
 					"abstract": "blukii is an open hardware platform containing wearables, beacons, sensors and tags. With its software libraries for the different operating systems, developers can easily create their own solutions based on the blukii hardware. The session will cover an overview of the different features of the blukii platform, also showing some demos.",
-					"room": "A266"
+					"room": "A266",
+					"slides": "assets/slides/blukii.pdf"
 				},
 				{
 					"title": "Optimization strategies for mobile game development",
@@ -201,7 +203,8 @@
 					"speaker": "Christian Janz",
 					"speakerlink": "https://plus.google.com/+ChristianJanz",
 					"abstract": "Oft hört man die Aussage, dass man mit JavaScript keine professionellen Geschäftsanwendungen entwickeln kann. In dieser Session möchte ich versuchen, diese Aussage zu widerlegen. Hierzu werde ich zeigen, wie bewährte Konzepte, wie z.B. Continuous Integration, für eine AngularJS-Anwendung verwendet und umgesetzt werden können.",
-					"room": "Audimax"
+					"room": "Audimax",
+					"slides": "assets/slides/Building-Enterprise-Applications-with-AngularJS.pdf"
 				},
 				{
 					"title": "Google Enterprise",
