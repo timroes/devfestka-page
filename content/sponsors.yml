@@ -1,0 +1,104 @@
+- group: Goldsponsoren
+  sponsors:
+    - name: EclipseSource
+      url: http://eclipsesource.com
+      logo: assets/sponsors/eclipsesource.svg
+      description: |
+        EclipseSource is a leading technology and service provider for multi-platform software and an
+        influential Open Source company in the software tools space. Successful companies trust EclipseSource's
+        technologies to develop and supply apps on rich clients, on the Web and on mobile devices.
+
+        We offer an array of services around Eclipse, including:
+
+        * Consulting and training
+
+        * Sponsored open-source development
+
+        * Support packages
+
+        * Yoxos products for software management and provisioning
+
+        * Tabris/Tabris.js cross platform frameworks for native mobile applications
+
+        EclipseSource is a founding member of Eclipse.org with a combined strength of 30+ employees. The company's
+        headquarters is in Karlsruhe, Germany, with offices in Munich (Germany), Vienna (Austria), Gdynia (Poland),
+        Portland (USA) and Victoria (Canada).
+    - name: inovex
+      url: https://www.inovex.de
+      logo: assets/sponsors/inovex.svg
+      description: |
+        inovex ist ein IT-Projekthaus mit rund 150 Mitarbeitern an den fünf Standorten
+        Karlsruhe, Pforzheim, München, Köln und Hamburg. Die Marke steht für innovative,
+        exzellente IT-Lösungen im Enterprise-Umfeld, mit denen sich klassische
+        Wertschöpfungsmodelle digitalisieren und mobilisieren oder ganz neue digitale
+        Geschäftsmodelle verwirklichen lassen. Mit diesem Fokus hat inovex zahlreiche
+        große Projekte in den Bereichen Social Business, Mobile Applications, Web und Portal
+        Engineering, Business Intelligence und Big Data, Cloud-Infrastrukturen und Data Center
+        Management agil ins Ziel gebracht. Das Team von inovex besteht aus technologiebegeisterten
+        IT-Ingenieuren, die neben ihrer Projektarbeit auf zahlreichen Konferenzen vortragen und
+        Fachartikel über neue Technologien für Enterprise-Anforderungen schreiben. Durch diese
+        Expertise ist das Unternehmen in der Lage, auch sehr komplexe und vielschichtige Projekte
+        zu meistern und seinen Kunden nachhaltige, produktive und wertschöpfende IT-Lösungen zur
+        Verfügung zu stellen.
+    - name: intel
+      url: https://software.intel.com/android
+      logo: assets/sponsors/intel.png
+    - name: thinktecture
+      url: http://www.thinktecture.de
+      logo: assets/sponsors/thinktecture.png
+      description: |
+        Thinktecture ist ein Team von Technologie-Enthusiasten mit großer Leidenschaft für das Web,
+        Javascript, SPA-Frameworks und skalierbaren Backends zur Entwicklung von Cross-Plattform
+        Applikationen. Wir unterstützen unsere Kunden bei der Umsetzung ihrer Projekte für Desktops
+        und mobile Geräte unabhängig vom OS und Geräteformfaktor.
+
+        Unsere Wissensquellen sind die Erfahrungen aus Projekten und monatlichem, mehrtägigem
+        Technologie-Research. Erkenntnisse teilen wir sehr gerne mit der Community durch Vorträge auf
+        Konferenzen und Usergroup-Events, Beiträgen in Blogs und Artikel in Printmedien.
+
+        Mit Christian Weyer stellt Thinktecture den ersten deutschen Google Developer Expert.
+- group: Silbersponsoren
+  sponsors:
+    - name: blukii
+      url: http://www.blukii.com
+      logo: assets/sponsors/blukii.png
+      description: |
+        blukii. The Company behind.
+
+        Für die Entwicklung von Wearables trifft man im Schwarzwald auf ein hervorragendes Umfeld.
+        Hier gibt es eine lange Tradition in der Entwicklung und Produktion von Uhren, Schmuck und
+        Schreibgeräten - die Basis für die meisten Wearables. Kombiniert mit dem weit verbreiteten
+        Tüftlergeist und Unternehmertum war das die Basis für blukii – einem innovativen Baukasten
+        von Wearables, Beacons, Sensors, Keys und Tags. Dieser Baukasten ist die Grundlage für die
+        effiziente Realisierung neuer Lösungen in den zukunftsträchtigsten Bereichen unseres Lebens:
+        Internet of Things, Smart Home, Smart Fitness, Ambient Assistant Living, Industrie 4.0, Location
+        Based Services und anderen.
+
+        Die Schneider Schreibgeräte GmbH ist ein Familienunternehmen in der 3. Generation. Die
+        produzierten Schreibgeräte zeichnen sich durch "Made in Germany"-Qualität aus.
+        Das wird vor allem durch eine außergewöhnlich hohe Fertigungstiefe erreicht. Nahezu alle
+        Komponenten werden in Deutschland hergestellt. Dabei wird ebenfalls auf eine nachhaltige
+        Produktionsweise geachtet.
+
+        Hier bei Schneider trifft Tradition auf Innovation, Heimatverbundenheit auf Weltoffenheit,
+        Bodenständigkeit auf Pioniergeist, Mittelstand auf Start-up, Mechanik auf Elektronik, Made in
+        Germany auf Globalisierung, hohe Fertigungstiefe auf virtuelle Company oder allgemein: „Old
+        Economy“ auf „New Economy“.
+    - name: bridgingIT
+      url: http://www.bridging-it.de
+      logo: assets/sponsors/bridgingIT.jpg
+      description: |
+        Die BridgingIT GmbH wurde Anfang 2008 als unabhängiges IT-Beratungsunternehmen gegründet.
+        Wir verstehen uns als innovativer Dienstleister und verbinden die Anforderungen der IT mit denen
+        der Fachseite. Wir beraten Kunden des gehobenen Mittelstands und Großkunden bei der Umsetzung von
+        Unternehmensstrategien und dem Einsatz moderner Technologien. Als Full-Service-Provider bieten
+        wir ein fokussiertes Angebotsportfolio und arbeiten dabei stets herstellerunabhängig.
+    - name: FILIADATA
+      url: https://www.dm.de/unternehmen/arbeiten-und-lernen/arbeiten-bei-uns/filiadata-c534052.html
+      logo: assets/sponsors/dm.png
+
+- group: Bronzesponsoren
+  sponsors:
+    - name: synyx
+      url: http://www.synyx.de
+      logo: assets/sponsors/synyx.png

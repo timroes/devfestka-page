@@ -1,6 +1,7 @@
 <div class="sessiondetails">
 	<h1>{{ session.title }}</h1>
-	<a ng-if="session.speaker" class="speakerlink" href="{{ session.speakerlink }}" target="_blank">{{ session.speaker | join:', ' }}</a>
+	<span class="speaker" ng-if="session.speaker && !session.speakerlink">{{ session.speaker }}</span>
+	<a ng-if="session.speaker && session.speakerlink" class="speakerlink" href="{{ session.speakerlink }}" target="_blank">{{ session.speaker }}</a>
 	<div class="sessmeta" ng-if="session.room">
 		<span class="sessmeta__label sessdialog__room">
 			Raum: <span class="sessmeta__text">{{ session.room }}</span>
@@ -8,8 +9,14 @@
 		<span class="sessmeta__label sessdialog__lang" ng-show="session.lang">
 			Sprache: <span class="sessmeta__text">{{ session.lang | lang }}</span>
 		</span>
+		<span class="sessmeta__label sessdialog_audience" ng-show="session.audience">Zielgruppe: <span class="sessmeta__text">{{ session.audience }}</span></span>
 	</div>
 	<div class="abstract" ng-bind-html="session.abstract"></div>
+
+	<div ng-if="session.speakerdesc">
+		<h2 class="sessiondetails__about-speaker">About {{ session.speaker }}</h2>
+		<p ng-bind-html="session.speakerdesc"></p>
+	</div>
 	<a class="session__slides" href="{{session.slides}}" ng-show="session.slides">
 		<i class="icon-doc"></i>
 		Präsentation herunterladen

@@ -1,0 +1,4 @@
+# Whether the CfP is currently visible
+enabled: false
+# The link to the call for papers formular
+url: http://j.mp/devfest-2015-cfp

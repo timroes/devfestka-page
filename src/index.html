@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html ng-app="devfest">
 <head>
-	<title>GDG DevFest Karlsruhe 2014</title>
+	<base href="/">
+	<title>GDG DevFest Karlsruhe 2015</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<script type="text/javascript" src="libs/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="libs/angular.min.js"></script>
-	<script type="text/javascript" src="libs/angular-route.min.js"></script>
-	<script type="text/javascript" src="libs/angular-animate.min.js"></script>
-	<script type="text/javascript" src="libs/angular-sanitize.min.js"></script>
-	<script type="text/javascript" src="libs/ngDialog.min.js"></script>
-	<script type="text/javascript" src="scripts/templates.js"></script>
-	<script type="text/javascript" src="scripts/app.min.js"></script>
-	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+	<meta name="theme-color" content="#00897B">
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+	<link rel="icon" href="/assets/devfest-banner-192.png" sizes="192x192">
+	<link rel="icon" href="/assets/devfest-banner-128.png" sizes="128x128">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="libs/ngDialog.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/icons/css/icons.css">
-	<link rel="stylesheet" type="text/css" href="styles/app.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="styles/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/app.min.css">
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<span class="first">GDG DevFest</span>
-			<span class="last">Karlsruhe 2014</span>
-			<img src="assets/gdg-icon.png" alt="GDG Logo">
-		</div>
-		<div id="menu" ng-controller="navigationController">
-			<span class="sr-only">Menü:</span>
-			<div id="countdown"></div>
 
-			<a href="#" class="menutoggle" ng-click="toggleNavigation($event)" click-blur>
-				<span class="top">Navigation</span>
-			</a>
+	<header>
+		<div class="container">
+			<object class="banner" data="assets/devfest-banner.svg" type="image/svg+xml"></object>
 
-			<div class="items" ng-class="{ collapsed: !showNavigation }">
-				<a href="#{{item.url}}" ng-repeat="item in menu" click-blur><span class="top" ng-bind="item.label"></span></a>
-			</div>
+			<nav class="header-nav">
+				<a href="/">Home</a>
+				<a href="/programm">Programm</a>
+			</nav>
 		</div>
-		<div id="content">
-			<div ng-view class="fade ngview" autoscroll></div>
-			<div class="clear"></div>
-		</div>
+	</header>
 
+	<main id="content">
+		<div ng-view class="fade ngview" autoscroll></div>
+		<div class="clear"></div>
 		<noscript>
 			This page requires JavaScript. Please enable it for this page.
 		</noscript>
-	</div>
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<h2 class="footer-header">Kontakt</h2>
+			<ul class="footer-linklist">
+				<li><a href="/impressum">Impressum</a></li>
+				<li><a href="mailto:devfest@gdg-karlsruhe.de">devfest@gdg-karlsruhe.de</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="scripts/libs.min.js"></script>
+	<script src="scripts/app.min.js"></script>
+	<script src="scripts/templates.min.js"></script>
 
 </body>
 </html>

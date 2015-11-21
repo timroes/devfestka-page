@@ -1,0 +1,224 @@
+.schedule {
+	@extend .container;
+}
+
+$timeslot_height: 150px;
+$timeslot_small_height: 80px;
+
+$border_style: 1px solid #DDD;
+
+.schedule .date {
+	color: #AAA;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-left: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.schedule-day {
+	display: table;
+	border-collapse: collapse;
+	border: $border_style;
+	width: 100%;
+	margin-bottom: 1em;
+
+	@include phone {
+		margin-left: -1.2em;
+		margin-right: -1.2em;
+		width: auto;
+	}
+}
+
+.timeslot {
+	display: table-row;
+	width: 100%;
+	border: $border_style;
+}
+
+.timeslot-label {
+	display: table-cell;
+	font-weight: 200;
+	text-align: left;
+	font-size: 120%;
+	padding: 0.5em 0.8em;
+	color: #333;
+	background-color: #EEE;
+
+	@include phone {
+		font-size: 90%;
+	}
+}
+.timeslot-label time {
+	display: block;
+}
+
+.timeslot-items {
+	display: table-cell;
+	border-left: $border_style;
+	width: 100%;
+	// background-color: rgba(0, 255, 0, 0.2);
+	vertical-align: top;
+}
+
+.timeslot-item {
+	display: table-cell;
+	position: relative;
+	vertical-align: top;
+	// background-color: rgba(255,0,0,0.2);
+	// width: 33%;
+	font-weight: 300;
+	overflow: hidden;
+	cursor: default;
+	@extend .nouserselect;
+
+	&.single {
+		display: block;
+		width: 100% !important;
+	}
+}
+
+.tracks-2 .timeslot-item {
+	width: 50%;
+}
+.tracks-3 .timeslot-item {
+	width: 33%;
+}
+.tracks-4 .timeslot-item {
+	width: 25%;
+}
+
+.timeslot-item + .timeslot-item {
+	border-left: $border_style;
+}
+
+.timeslot-item__content {
+	position: relative;
+	padding: 0.5em;
+}
+
+.timeslot-item__lang {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #AAA;
+	font-size: 70%;
+	text-transform: uppercase;
+}
+
+.timeslot-item.spanning {
+	width: 100%;
+	border-left: $border_style;
+}
+
+.timeslot-item .colorstrip {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	transition: top 0.4s;
+	opacity: 0.7;
+}
+
+.timeslot-item:hover .colorstrip,
+.timeslot-item:focus .colorstrip,
+.timeslot-item:active .colorstrip {
+	top: 0;
+}
+
+.timeslot-item .colorstrip.color0 {
+	background-color: $accent-color;
+}
+.timeslot-item .colorstrip.color1 {
+	background-color: #673AB7;
+}
+.timeslot-item .colorstrip.color2 {
+	background-color: #6589c5;
+}
+.timeslot-item .colorstrip.color3 {
+	background-color: #f7c63f;
+}
+
+.timeslot-item h1 {
+	margin: 0 0 0.4em;
+	color: black;
+	font-size: 1.25rem;
+}
+
+.timeslot-item .speaker {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.timeslot-item .room {
+	font-size: 90%;
+	color: #666;
+	margin-top: 0.3em;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+@include phone {
+	.timeslot-item:not(.spanning) {
+		display: block;
+		width: 100%;
+	}
+	.timeslot-item.empty {
+		display: none;
+	}
+	.timeslot-item + .timeslot-item {
+		border-left: none;
+		border-top: $border_style;
+	}
+}
+
+// Detail dialogs
+.sessiondetails {
+	word-break: break-word
+;}
+
+.sessiondetails h1 {
+	line-height: 120%;
+}
+.sessiondetails .abstract {
+	white-space: pre-line;
+	margin-top: 1rem;
+}
+.sessiondetails .meta span {
+	margin-right: 2rem;
+	color: #000;
+}
+.sessiondetails .speakerlink {
+	margin-bottom: 0.3em;
+	color: #577EC0;
+}
+.sessiondetails .speakerlink:hover,
+.sessiondetails .speakerlink:focus {
+	color: #444;
+}
+
+.sessiondetails__about-speaker {
+	font-size: 1em;
+}
+
+.sessmeta {
+	margin: 0 -1em;
+}
+
+.sessmeta__label {
+	color: #666;
+	white-space: nowrap;
+	margin: 1em;
+}
+
+.session__slides {
+	display: inline-block;
+	margin-top: 2rem;
+	color: #577EC0;
+}
+
+.session__slides:hover,
+.session__slides:focus,
+.session__slides:active {
+	text-decoration: none;
+	color: #000;
+}
+
+.sessmeta__text {
+	color: #000;
+}

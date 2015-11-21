@@ -1,0 +1,69 @@
+<div class="schedule">
+	<h1>Programm</h1>
+
+	<% if (!schedule.enabled) { %>
+		<%= text(schedule.before.disabled) %>
+	<% } else { %>
+		<%= text(schedule.before.enabled) %>
+
+		<% _.forEach(schedule.data, function(day) { %>
+
+			<%
+				var tracks = 1;
+				_.forEach(day.slots, function(slot) {
+					tracks = Math.max(tracks, slot.sessions.length);
+				});
+			%>
+
+			<h2 class="date"><%= date(day.date) %></h2>
+
+			<section class="schedule-day tracks-<%= tracks %>">
+				<% _.forEach(day.slots, function(slot) { %>
+				<div class="timeslot" itemtype="http://schema.org/subEvent" time-anchor="<%= date(day.date, 'yyyy-mm-dd') + 'T' + slot.from %>">
+					<div class="timeslot-label">
+						<time itemprop="startDate" datetime="<%= slot.from %>"><%= slot.from %></time>
+						<time itemprop="endDate" datetime="<%= slot.to %>"><%= slot.to %></time>
+					</div>
+					<div class="timeslot-items">
+						<% _.forEach(slot.sessions, function(sess, key) { %>
+						<div class="timeslot-item <% if(!sess.title) { %>empty<% } %> <% if (slot.sessions.length === 1) { %>single<% } %>"
+								ng-click="showDetails('<%= idfor(sess.title) %>')">
+							<% if (sess.title) { %>
+							<div class="timeslot-item__content">
+								<% if(sess.title && sess.room) { %>
+									<div class="colorstrip color<%= key %>"></div>
+								<% } %>
+								<h1><%= sess.title %> <span class="timeslot-item__lang"><%= sess.lang %></span></h1>
+								<% if(sess.speaker) { %>
+									<span class="speaker"><%= join(sess.speaker, ', ') %></span>
+								<% } %>
+								<div class="room"><%= sess.room %></div>
+							</div>
+							<% } %>
+						</div>
+						<% }); %>
+						<% for (var i = 0; i < tracks - slot.sessions.length; i++) { %>
+						<div class="timeslot-item empty"></div>
+						<% } %>
+					</div>
+				</div>
+				<% }); %>
+			</section>
+
+		<% }); %>
+
+	<% } %>
+
+	<% if (callforpapers.enabled) { %>
+	<a class="boxlink" href="<%= callforpapers.url %>">
+		Vortrag einreichen
+	</a>
+	<% } %>
+
+	<% _.forEach(schedule.after, function(paragraph) { %>
+		<h2><%= paragraph.title %></h2>
+		<%= text(paragraph.text) %>
+	<% }); %>
+</div>
+
+<scroll-to-now ng-if="showScrollToNow"></scroll-to-now>

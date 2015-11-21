@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	overflow-y: scroll;
+}
+
+input, select, button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+noscript {
+	display: block;
+	text-align: center;
+	font-size: 130%;
+	font-weight: 300;
+	margin: 2em 0;
+}

@@ -1,0 +1,36 @@
+footer {
+	background-color: #F5F5F5;
+	display: block;
+	padding: 0.2rem 0 4rem;
+	color: white;
+	margin-top: 3rem;
+
+	a {
+		font-size: 1rem;
+		color: $darkgray;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer-container {
+	@extend .container;
+}
+
+.footer-header {
+	font-size: 1.2rem;
+	color: #888;
+	font-weight: 500;
+	margin: 1.2em 0 0.5em;
+}
+
+.footer-linklist {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	line-height: 1.7;
+	margin: 0.5em 0;
+}

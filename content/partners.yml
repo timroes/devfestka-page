@@ -1,0 +1,16 @@
+# A list of all partnes. Each list item should contain the keys:
+# name -> The name of the partner (used as title text)
+# logo -> An url of the logo to use
+# url -> The URL to link to
+
+- name: Google Developers
+  logo: assets/partners/gdevelopers.png
+  url: https://developers.google.com
+
+- name: DHBW Karlsruhe
+  logo: assets/partners/dhbw_ka.jpg
+  url: https://www.dhbw-karlsruhe.de
+
+- name: GI Karlsruhe
+  logo: assets/partners/gi_ka_logo.jpg
+  url: http://rg-karlsruhe.gi.de

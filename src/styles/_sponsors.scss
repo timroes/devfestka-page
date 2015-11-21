@@ -1,0 +1,59 @@
+.sponsors {
+	@extend .container;
+	margin-top: 3em;
+	text-align: center;
+}
+
+.sponsor {
+	appearance: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+
+.sponsor-group {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sponsors h2 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.sponsor-group .sponsor {
+	display: inline-block;
+	margin: 0.8em;
+
+	@include phone {
+		margin: 1.2em 0.8em;
+	}
+}
+
+.sponsor-group a + a {
+}
+
+.sponsor-group .sponsor img {
+	max-height: 80px;
+}
+
+.sponsors .sponsor-information {
+	display: inline-block;
+	margin-top: 2.5em;
+}
+
+.sponsor-dialog a{
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.2s ease-in-out;
+	outline: none;
+
+	&:hover, &:focus {
+		color: black;
+	}
+}
+

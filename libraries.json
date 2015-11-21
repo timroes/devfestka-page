@@ -1,0 +1,14 @@
+[
+	{ "name": "lodash", "src": ["lodash.min.js"] },
+	{ "name": "jquery", "src": ["dist/jquery.min.js"]},
+	{ "name": "angular", "src": ["angular.min.js"] },
+	{ "name": "angular-simple-logger", "src": ["dist/angular-simple-logger.min.js"] },
+	{ "name": "angular-aria", "src": ["angular-aria.min.js"] },
+	{ "name": "angular-touch", "src": ["angular-touch.min.js"] },
+	{ "name": "angular-route", "src": ["angular-route.min.js"] },
+	{ "name": "angular-animate", "src": ["angular-animate.min.js"] },
+	{ "name": "angular-sanitize", "src": ["angular-sanitize.min.js"] },
+	{ "name": "angular-google-maps", "src": ["dist/angular-google-maps.min.js"] },
+	{ "name": "angular-scroll", "src": ["angular-scroll.min.js"] },
+	{ "name": "ngDialog", "src": ["js/ngDialog.min.js"], "styles": ["css/ngDialog.min.css", "css/ngDialog-theme-default.min.css"] }
+]

@@ -1,0 +1,56 @@
+main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	color: $accent-color;
+	margin-top: 1.2em;
+	clear: both;
+}
+
+h1:first-child {
+	margin-top: 0.2em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
+
+.title-bright {
+	color: white;
+}
+
+a.boxlink {
+	display: inline-block;
+	text-decoration: none;
+	margin: 0.3em auto;
+	color: white;
+	background-color: $logo-color;
+	border-radius: 2px;
+	padding: 8px 15px;
+	font-size: 120%;
+	font-weight: 300;
+	box-shadow: 3px 4px 2px -2px #AAA;
+	transition: background-color 0.2s ease-in-out;
+}
+
+a.boxlink:hover, a.boxlink:focus {
+	background-color: lighten($logo-color, 10%);
+}
+
+a.boxlink:active {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	box-shadow: 1px 2px 1px -1px #AAA;
+}
+
+p {
+	line-height: 1.5;
+}

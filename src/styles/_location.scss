@@ -1,0 +1,98 @@
+$location-fade-time: 0.2s;
+
+.location-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	@include phone {
+		justify-content: center;
+	}
+
+	&.info-minimized {
+		.location-info {
+			display: none;
+		}
+		ui-gmap-google-map {
+			opacity: 1;
+		}
+		.location-minimized {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
+
+.location-minimized {
+	@extend %box;
+	padding: 0;
+	opacity: 0;
+	transform: scale(0);
+	z-index: 10;
+	border-radius: 50%;
+	text-align: center;
+	background: $accent-color;
+	color: $accent-color-contrast;
+	border: none;
+	font-size: 1.2rem;
+	width: 3rem;
+	height: 3rem;
+	display: block;
+	position: absolute;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	outline: none;
+	transition: transform $location-fade-time ease-out, opacity $location-fade-time ease-out;
+
+	&:hover, &:focus {
+		background-color: $accent-color-lighter;
+	}
+}
+
+.location-info {
+	&:hover {
+		opacity: 1 !important;
+	}
+
+	@extend %box;
+	top: 0;
+	background-color: white;
+	right: 30%;
+	top: 3em;
+	transition: opacity 0.3s linear;
+	z-index: 10;
+	width: 100%;
+	max-width: 300px;
+	margin-right: 20vw;
+
+	@include tablet {
+		right: 10%;
+	}
+	@include phone {
+		margin-right: 0;
+	}
+}
+
+.location-info-title {
+	@extend %box-title;
+}
+
+.location-get-direction {
+	@extend %box-footer;
+	padding: 0.8em;
+}
+
+.location-container,
+.angular-google-map-container {
+	height: 400px;
+}
+
+ui-gmap-google-map {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0.5;
+	transition: opacity $location-fade-time ease-in-out;
+}

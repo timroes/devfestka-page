@@ -1,0 +1,23 @@
+$snackbar-height: 3rem;
+
+.scrolltonow {
+	display: none;
+	text-align: center;
+	text-transform: uppercase;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: $accent-color;
+	color: $accent-color-contrast;
+	line-height: $snackbar-height;
+	transition: bottom 0.3s linear;
+	cursor: pointer;
+
+	@include phone {
+		display: block;
+	}
+}
+
+.scrolltonow.ng-hide {
+	bottom: -$snackbar-height;
+}

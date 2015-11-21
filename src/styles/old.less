@@ -1,0 +1,195 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #DEDEDE;
+
+}
+html,body {
+	height: 100%;
+}
+p + p {
+	margin-top: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	outline: 0;
+}
+a:hover, a:focus {
+	color: #577EC0;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -40px;
+	visibility: hidden;
+	clear: both;
+}
+
+.container {
+
+	// background-color: white;
+	// box-shadow: 0 0 5px 0 #999;
+}
+#header {
+	position: relative;
+	height: 197px;
+	background-image: url(../assets/header-bg.png);
+	background-repeat: no-repeat;
+}
+#header span {
+	font-size: 34px;
+	color: white;
+	text-shadow: 0 0 6px black;
+	position: absolute;
+	left: 130px;
+}
+#header span.first {
+	top: 25px;
+}
+#header span.last {
+	top: 70px;
+}
+#header img {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 30px;
+	left: 25px;
+}
+#content {
+	position: relative;
+}
+.maininfo {
+	font-size: 120%;
+	color: #555;
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 35px;
+	text-align: center;
+}
+.maininfo p {
+	display: inline-block;
+}
+.maininfo p + p {
+	margin-left: 1rem;
+}
+.maininfo a {
+	text-decoration: none;
+	color: inherit;
+}
+.maininfo a:hover, .maininfo a:focus {
+	text-decoration: underline;
+}
+.biglink {
+	text-align: left;
+	margin-top: 30px;
+}
+.biglink a {
+	text-decoration: none;
+	color: white;
+	background-color: #AAA;
+	padding: 8px 15px;
+	border-radius: 10px;
+	font-size: 120%;
+	transition: all 0.2s ease-in-out;
+}
+.biglink a:hover, .biglink a:focus {
+	background-color: #577ec0;
+}
+#countdown {
+	float: right;
+	padding-right: 5px;
+	line-height: 33px;
+}
+#countdown div {
+	vertical-align: middle;
+	border-radius: 100%;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: red;
+}
+#countdown div + div {
+	margin-left: 5px;
+}
+#countdown div {
+	background-color: #577ec0;
+	box-shadow: 0 0 5px #577ec0;
+	transition: all 0.2s ease-in-out;
+}
+#countdown div.off {
+	background-color: #DDD;
+	box-shadow: none;
+}
+.top {
+	z-index: 100;
+	position: relative;
+}
+
+.eventbrite {
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	top: 20px;
+	opacity: 1;
+}
+.eventbrite.ng-hide {
+	top: 50px;
+	opacity: 0;
+}
+.eventbrite.ng-hide-remove {
+	display: block !important;
+}
+
+.sponsor {
+	clear: left;
+}
+
+#content img {
+	max-width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+	#countdown {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+	#header {
+		height: 130px;
+	}
+	#menu {
+		text-align: center;
+		padding: 0;
+	}
+	.sponsor a {
+		display: inline-block;
+		float: none;
+		margin: 0 0 20px 0;
+	}
+	.sponsor {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+	#header span {
+		left: 100px;
+		font-size: 24px;
+	}
+	#header span.last {
+		top: 58px;
+	}
+	#header img {
+		width: 60px;
+		height: 60px;
+	}
+}

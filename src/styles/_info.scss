@@ -1,0 +1,32 @@
+.info-container {
+	@extend .container;
+	margin-bottom: 2em;
+}
+
+.info {
+	display: flex;
+
+	@include tablet {
+		flex-direction: column;
+	}
+}
+
+.info-description {
+	line-height: 1.5;
+	text-align: justify;
+	margin-right: 2rem;
+
+	@include tablet {
+		margin-right: 0;
+	}
+
+	p:first-child {
+		margin-top: 0;
+	}
+}
+
+@include phone {
+	.info-links {
+		text-align: center;
+	}
+}

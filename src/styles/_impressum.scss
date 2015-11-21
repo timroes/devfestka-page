@@ -1,0 +1,13 @@
+.impressum {
+	@extend .container;
+	margin-top: 1rem;
+}
+
+.impressum a.float-right {
+	float: right;
+}
+
+address span {
+	display: block;
+	line-height: 1.8;
+}

@@ -1,74 +1,113 @@
-<div class="maininfo">
-		<p title="Wo?"><i class="icon-location"></i><span class="sr-only">Wo?</span> <a href="https://www.google.com/maps/place/DHBW+Karlsruhe+(ehem.+BA+Karlsruhe)" target="_blank">DHBW Karlsruhe</a></p>
-		<p title="Wann?"><i class="icon-calendar"></i><span class="sr-only">Wann?</span> 25. Oktober 2014 (Sa), ab 8:30</p>
-		<p title="Eintrittspreis"><i class="icon-euro"></i><span class="sr-only">Eintrittspreis?</span> kostenlos</p>
-		<p><i class="icon-twitter"></i><span class="sr-only">Unser Hashtag für Twitter:</span> <a href="https://twitter.com/search?q=%23devfestka14&src=typd&f=realtime" target="_blank" title="Unser Hashtag für Twitter">#devfestka14</a> | <i class="icon-gplus-squared"></i> 
-		<a href="https://plus.google.com/u/0/events/c12tn8v6re71essjqknf6lq5urg" title="Zum Google+ Event">G+ Event</a></p>
-		<p>
-			<i class="icon-gplus-squared"></i>
-			<a href="https://plus.google.com/u/0/109775289623271731783/posts">
+<div class="info-container">
+	<div class="quickinfo">
+		<span title="Wann?"><i class="icon-calendar" aria-label="Wann?"></i> <%= date(event.date, 'dd. mmmm yyyy') %></span>
+		<span title="Eintrittspreis"><i class="icon-euro" aria-label="Eintrittspreis"></i> <%= event.fee %></span>
+		<% if (event.twitter.hash) { %>
+			<span>
+				<i class="icon-twitter"></i>
+				<a href="https://twitter.com/search?q=%23<%= event.twitter.hash %>&src=typd&f=realtime" target="_blank" title="Unser Hashtag für Twitter">#<%= event.twitter.hash %></a>
+			</span>
+		<% } %>
+
+		<% if (event.gplus && event.gplus.id) { %>
+		<span>
+			<i class="icon-gplus"></i>
+			<a href="https://plus.google.com/<%= event.gplus.id %>">
 				GDG auf Google+
 			</a>
-		</p>
+		</span>
+		<% } %>
 	</div>
+		<div class="info">
+			<div class="info-description">
+				<%= text(event.description) %>
 
+				<% if(callforpapers.enabled) { %>
+				<p class="info-links">
+					<a href="<%= callforpapers.url %>" class="boxlink" target="_blank">Vortrag einreichen</a>
+				</p>
+				<% } %>
+			</div>
 
-	<p>Entwickler und Technologiebegeisterte aufgepasst! Auch in diesem Jahr lädt die Google Developer Group Karlsruhe in Zusammenarbeit mit der GI/ACM-Regionalgruppe und der DHBW Karlsruhe herzlich zum GDG DevFest ein.</p>
-
-	<div class="partners">
-		<a href="https://www.dhbw-karlsruhe.de" target="_blank">
-			<img src="assets/dhbw_ka.jpg">
-		</a>
-		<a href="http://rg-karlsruhe.gi.de/" target="_blank">
-			<img src="assets/gi_ka_logo.jpg">
-		</a>
-		<a href="https://developers.google.com" target="_blank">
-			<img src="assets/gdevelopers.png">
-		</a>
+			<% if (partners && partners.length > 0) { %>
+			<div class="partners">
+				<% _.forEach(partners, function(partner) { %>
+				<a href="<%= partner.url %>" target="_blank" title="<%= partner.name %>">
+					<img src="<%= partner.logo %>">
+				</a>
+				<% }); %>
+			</div>
+			<% } %>
 	</div>
-
-	<p>Spannende Vorträge, CodeLabs und Austausch mit Gleichgesinnten. &ndash; All das gibt es am 25. Oktober 2014 ab 8:30 Uhr in den Räumen der Dualen Hochschule Baden-Württemberg in Karlsruhe. Zu den Themen gehören unter anderem Android, AngularJS, Dart und Go.</p>
-
-	<p>Wie schon in den vergangenen Jahren ist die Teilnahme wieder kostenfrei, für Getränke und Mittagessen (solange Vorrat reicht) ist ebenfalls gesorgt. Und auch diesmal lassen wir den Tag gemütlich bei einer After-Conference-Party mit einem kühlen Bierchen ausklingen.</p>
-
-	<p>Da die Teilnehmerzahl begrenzt ist, bitten wir um baldige <a href="#/anmeldung">Anmeldung</a>.</p>
-
-<img src="assets/photos1.jpg" alt="Photos vom DevFest 2013">
-
-<a id="sponsoren" class="anchor"></a>
-<h1>Sponsoren</h1>
-<p>Wir möchten uns bei unseren Sponsoren für ihre Unterstüzung bedanken:</p>
-<div class="sponsor">
-	<a href="https://www.inovex.de" target="_blank">
-		<img src="assets/inovex.png">
-	</a>
-	<p>inovex ist ein IT-Projekthaus mit rund 150 Mitarbeitern an den vier Standorten Karlsruhe, Pforzheim, München und Köln. Die Marke steht für innovative, exzellente IT-Lösungen im Enterprise-Umfeld, mit denen sich klassische Wertschöpfungsmodelle digitalisieren und mobilisieren oder ganz neue digitale Geschäftsmodelle verwirklichen lassen. Mit diesem Fokus hat inovex zahlreiche große Projekte in den Bereichen Social Business, Mobile Applications, Web und Portal Engineering, Business Intelligence und Big Data, Cloud-Infrastrukturen und Data Center Management agil ins Ziel gebracht.</p><p style="margin-top: 0.7em">Das Team von inovex besteht aus technologiebegeisterten IT-Ingenieuren, die neben ihrer Projektarbeit auf zahlreichen Konferenzen vortragen und Fachartikel über neue Technologien für Enterprise-Anforderungen schreiben. Durch diese Expertise ist das Unternehmen in der Lage, auch sehr komplexe und vielschichtige Projekte zu meistern und seinen Kunden nachhaltige, produktive und wertschöpfende IT-Lösungen zur Verfügung zu stellen. </p>
-</div>
-<div class="sponsor">
-	<a href="https://software.intel.com/android" target="_blank">
-		<img src="assets/intel.png">
-	</a>
-	<p><br><br>Intel&reg; Developer Zone: Tools. Knowledge. Community.</p>
 </div>
 
-<h2>Weitere Sponsoren</h2>
+<% if (tickets && tickets.eventbrite && tickets.eventbrite.id) { %>
+<div class="tickets">
+	<div class="container">
+		<h2 class="tickets-header">Anmeldung</h2>
+		<div class="ticket">
+			<h1 class="ticket-title">
+				Dein <img src="assets/devfest-text.svg" alt="DevFest" height="28px">-Ticket
+			</h1>
+
+			<p>Registrieriere dir jetzt dein <strong>kostenloses</strong> Ticket für das DevFest <%= event.year %>.</p>
+			<p>Solltest du am DevFest doch nicht teilnehmen können, gib bitte dein Ticket bei Eventbrite wieder frei und mache jemand anderem die Freude, sich einen der limitierten Plätze sichern zu können. Herzlichen Dank!</p>
+
+			<form action="http://www.eventbrite.de/orderstart?ebtv=C" method="POST">
+				<input type="hidden" name="eid" value="<%= tickets.eventbrite.id %>">
+				<input type="hidden" name="has_javascript" value="1">
+
+				<div class="ticket-footer">
+					<a href="<%= tickets.eventbrite.url %>" type="submit" class="ticket-button">
+						Anmelden
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<% } %>
+
+<div class="location-container" ng-class="{'info-minimized': infoMinimized }" ng-controller="MapController">
+	<div class="location-info">
+		<div class="location-info-content">
+			<h1 class="location-info-title">Location</h1>
+			<p><%= event.location.name %></p>
+			<p><%= event.location.address %></p>
+			<a class="location-get-direction" href="https://maps.google.com?daddr=<%= event.location.address %>" target="_blank">Navigation</a>
+		</div>
+	</div>
+	<button type="button" class="location-minimized" aria-label="Adresse anzeigen" ng-click="showInfo()">
+		<i class="icon-location"></i>
+	</button>
+	<ui-gmap-google-map center="mapCenter" zoom="14" options="mapOptions" ng-click="activateMap($event)" pan="true">
+		<ui-gmap-marker idKey="1" coords="eventLocation"></ui-gmap-marker>
+	</ui-gmap-google-map>
+</div>
 
 <div class="sponsors">
-	<a href="http://bridging-it.de" target="_blank">
-		<img src="assets/bridgingIT.png" alt="BridgingIT">
-	</a>
-	<a href="http://synyx.de" target="_blank">
-		<img src="assets/synyx.png" alt="Synyx">
-	</a>
+	<a id="sponsoren" class="anchor"></a>
+
+	<% _.forEach(sponsors, function(group) { %>
+		<h2><%= group.group %></h2>
+		<div class="sponsor-group">
+		<% _.forEach(group.sponsors, function(sponsor) { %>
+			<% if (sponsor.description) { %>
+				<button type="button" ng-dialog="<%= idfor(sponsor.name) %>" ng-dialog-class="ngdialog ngdialog-theme-default sponsor-dialog" class="sponsor" title="<%= sponsor.name %>"><img src="<%= sponsor.logo %>"></button>
+				<script type="text/ng-template" id="<%= idfor(sponsor.name) %>">
+					<h1><%= sponsor.name %></h1>
+					<a href="<%= sponsor.url %>" target="_blank"><i class="icon-link-ext"></i> <%= sponsor.url %></a>
+					<%= text(sponsor.description) %>
+				</script>
+			<% } else { %>
+				<a href="<%= sponsor.url %>" target="_blank" class="sponsor" title="<%= sponsor.name %>"><img src="<%= sponsor.logo %>"></a>
+			<% } %>
+		<% }); %>
+		</div>
+	<% }); %>
+
+	<% if (event.sponsorinformation) { %>
+		<a class="boxlink sponsor-information" href="<%= event.sponsorinformation %>" target="_blank">Werden Sie Sponsor!</a>
+	<% } %>
+
 </div>
-
-<a id="sponsoring" class="anchor"></a>
-<h2>Sponsoring</h2>
-
-<p>
-Wir freuen uns über Sponsoren für das DevFest 2014 in Karlsruhe. Informationen zu Sponsoring-Paketen gibt es hier:
-</p>
-
-<center>
-	<a class="boxlink" href="assets/downloads/SponsoringDevFestKarlsruhe2014.pdf"><i class="icon-file-pdf"></i> Sponsoring DevFest 2014</a>
-</center>

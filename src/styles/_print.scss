@@ -1,0 +1,20 @@
+@media print {
+	header {
+		display: none;
+	}
+	.schedule > *:not(.schedule-day):not(.date) {
+		display: none;
+	}
+	.schedule {
+		font-size: 90%;
+	}
+	footer {
+		display: none;
+	}
+	.timeslot-item h1 {
+		font-size: 1rem;
+	}
+	.colorstrip {
+		display: none;
+	}
+}

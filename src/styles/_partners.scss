@@ -1,0 +1,24 @@
+.partners {
+	text-align: center;
+
+	@include tablet {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 0;
+	}
+}
+
+.partners a {
+	display: inline-block;
+}
+.partners a img {
+	max-width: 250px;
+	max-height: 80px;
+}
+
+.partners a {
+	margin: 0.7em 1.4em;
+}

@@ -1,0 +1,43 @@
+# The year of the event, which will be used in several texts
+year: 2015
+# The date as printed to the user of the event
+date: 2015-11-14
+# The price of the event (can be any string)
+fee: kostenlos
+
+# The description as printed in the information
+description: |
+  Entwickler und Technologiebegeisterte aufgepasst! Auch in diesem Jahr
+  lädt die Google Developer Group Karlsruhe in Zusammenarbeit mit der
+  GI/ACM-Regionalgruppe und der DHBW Karlsruhe herzlich zum GDG DevFest ein.
+
+  Spannende Vorträge, CodeLabs und Austausch mit Gleichgesinnten. – All das
+  gibt es auf dem DevFest 2015 in den Räumen der Dualen Hochschule Baden-Württemberg
+  in Karlsruhe. Zu den Themen gehören unter anderem Android, AngularJS, Dart und Go.
+
+  Wie schon in den vergangenen Jahren ist die Teilnahme wieder kostenfrei, für Getränke
+  und Mittagessen (solange Vorrat reicht) ist ebenfalls gesorgt. Und auch diesmal lassen
+  wir den Tag gemütlich bei einer After-Conference-Party mit einem kühlen Bierchen ausklingen.
+
+# Information about the location of the event
+location:
+  name: DHBW Karlsruhe
+  address: "Erzbergerstr. 121, 76133 Karlsruhe"
+  coords:
+    lat: 49.0263729
+    lng: 8.3855053
+  map_center:
+    lat: 49.02544
+    lng: 8.4
+
+# Twitter information
+twitter:
+  # The twitter hash for this event (without the trailing #)
+  hash: devfestka15
+
+# Google+ Information
+gplus:
+  id: +GDGKarlsruheDE
+
+# A link to the sponsoring information PDF
+sponsorinformation: assets/downloads/Sponsoring_DevFest_2015.pdf
