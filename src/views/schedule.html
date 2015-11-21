@@ -33,7 +33,10 @@
 								<% if(sess.title && sess.room) { %>
 									<div class="colorstrip color<%= key %>"></div>
 								<% } %>
-								<h1><%= sess.title %> <span class="timeslot-item__lang"><%= sess.lang %></span></h1>
+								<h1>
+									<% if (sess.video) { %><i class="timeslot-item__video icon-video"></i><% } %>
+									<%= sess.title %> <span class="timeslot-item__lang"><%= sess.lang %></span>
+								</h1>
 								<% if(sess.speaker) { %>
 									<span class="speaker"><%= join(sess.speaker, ', ') %></span>
 								<% } %>

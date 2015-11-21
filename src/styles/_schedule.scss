@@ -153,6 +153,10 @@ $border_style: 1px solid #DDD;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.timeslot-item__video {
+	color: #666;
+}
+
 @include phone {
 	.timeslot-item:not(.spanning) {
 		display: block;
@@ -221,4 +225,8 @@ $border_style: 1px solid #DDD;
 
 .sessmeta__text {
 	color: #000;
+}
+
+.session__video {
+	margin-bottom: 1em;
 }

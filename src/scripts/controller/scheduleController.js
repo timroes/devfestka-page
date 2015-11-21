@@ -16,7 +16,8 @@ angular.module('devfest')
 							lang: '<%= esc(sess.lang) %>',
 							abstract: '<%= esc(text(sess.abstract)) %>',
 							slides: '<%= esc(sess.slides) %>',
-							audience: '<%= esc(sess.audience) %>'
+							audience: '<%= esc(sess.audience) %>',
+							video: '<%= esc(sess.video) %>'
 						},
 
 		<%			}
