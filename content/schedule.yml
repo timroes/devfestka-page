@@ -50,6 +50,7 @@ data:
               operating system used on the workstations of all Google Engineers. She's a Debian Developer since 2005, an
               active member of the Debian Women project, and has recently organized DebConf15 in Heidelberg.
             slides: assets/slides/towards-a-more-inclusive-tech-community.pdf
+            video: https://www.youtube.com/watch?v=oHHLvWeTlR0
 
       - from: 10:00
         to: 10:30
@@ -72,6 +73,7 @@ data:
               Wir schließen den Vortrag ab mit den gewonnenen Erkenntnissen aus der praktischen Integration.
             room: Audimax
             audience: Anfänger
+            video: https://www.youtube.com/watch?v=5oBLd2H1Snk
           - title: Promises - das Beste, was JavaScript in den letzten fünf Jahren passiert ist.
             lang: de
             speaker: Matthias Reuter
@@ -81,6 +83,7 @@ data:
               sie für alte Browser ohne Weiteres nachrüsten.
             room: Raum A266
             audience: Anfänger
+            slides: assets/slides/promises-handout.pdf
           - title: Kotlin: A New Language for Android Development
             lang: en
             speaker: Dmitry Jemerov
@@ -128,6 +131,7 @@ data:
               Topics covered: PlayStore Optimization, Social Media, Invitation and Referral Systems, Event and
               E-Mail Marketing, Analytics
             slides: http://www.slideshare.net/LuMa921/growth-hacking-101-55130236
+            video: https://www.youtube.com/watch?v=OHQNGhizOTY
           - title: The Web - Today and Tomorrow
             lang: de
             speaker: Tim Roes
@@ -218,6 +222,7 @@ data:
               languages, but not familiar with Go. There will be examples taken from actual code, as well a live demo and plenty
               of time for questions.
             slides: assets/slides/lets-get-ready-to-go.pdf
+            video: https://www.youtube.com/watch?v=tRgGBhf656I
           - title: Augmented Reality Glasses - The Future is Now... Almost!
             lang: de
             speaker: Tim Reiter, Daniel Reichert & Alisa Jung
@@ -279,6 +284,7 @@ data:
               gängigsten Browser unterstützen, um bereits heute Web Components einsetzen zu können.  In diesem Vortrag zeige ich, welche
               Vorteile sich aus der Verwendung von Web Components, speziell mit der Polymer-Bibliothek ergeben und wie die Qualität von
               Webanwendungen dadurch und durch das zur Verfügung stehende Tooling-Ökosystem sehr einfach und effizient gesteigert werden kann. 
+            video: https://www.youtube.com/watch?v=0Ldoci3vFhs
           - title: Stadtgeist Karlsruhe - Augmented History App. Real World Cross-Platform development mit C# und Xamarin
             lang: de
             speaker: Aydin Mir Mohammadi
@@ -345,6 +351,7 @@ data:
               seine Container mithilfe der GKE orchestrieren und verwalten kann. Grundwissen über Container (Docker) ist hilfreich aber keine
               Voraussetzung. Der Fokus liegt auf der Anwendersicht.
             slides: https://www.inovex.de/fileadmin/files/Vortraege/2015/google-container-engine-johannes-scheuermann-devfest-11-2015.pdf
+            video: https://www.youtube.com/watch?v=OHQNGhizOTY
           - title: Hands on Implementing Chromecast in Android Apps
             lang: de
             speaker: Angelo Rüggeberg
