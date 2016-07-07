@@ -225,11 +225,15 @@ gulp.task('templates', function() {
 		.pipe(_.connect.reload());
 });
 
-gulp.task('deploy', ['build'], function() {
+gulp.task('deploy', function() {
 
 	var remote = '/';
 
-	var loginData = require('./ftplogin.json');
+	var loginData = {
+		host: process.env.ftphost,
+		user: process.env.ftpuser,
+		password: process.env.ftppassword
+	};
 
 	var conn = ftp.create({
 		host: loginData.host,
