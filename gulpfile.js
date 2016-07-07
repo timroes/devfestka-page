@@ -13,8 +13,6 @@ var dateformat = require('dateformat'),
 
 var _ = require('gulp-load-plugins')();
 
-// _.libraries();
-
 var libs = require('./libraries.json');
 
 var contentDir = 'content';
@@ -146,18 +144,6 @@ gulp.task('jshint', function() {
 		.pipe(_.jshint())
 		.pipe(_.jshint.reporter('jshint-stylish'));
 });
-
-// gulp.task('libs', ['libs.styles'], function() {
-// 	return _.libraries.files('js')
-// 		.pipe(_.concat(filenames.libs))
-// 		.pipe(gulp.dest(out.scripts));
-// });
-
-// gulp.task('libs.styles', function() {
-// 	return _.libraries.files('css')
-// 		.pipe(_.concat(filenames.libstyles))
-// 		.pipe(gulp.dest(out.styles));
-// });
 
 // Copy all required library files (without updating them from bower)
 gulp.task('libs', ['libs.styles'], function(done) {

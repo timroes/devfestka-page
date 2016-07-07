@@ -25,7 +25,6 @@
     "gulp-fncallback": "^2.0.2",
     "gulp-imagemin": "^2.3.0",
     "gulp-jshint": "^1.8.4",
-    "gulp-libraries": "timroes/gulp-libraries",
     "gulp-load-plugins": "^0.10.0",
     "gulp-minify-css": "^0.3.10",
     "gulp-minify-html": "^1.0.3",
