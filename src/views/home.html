@@ -1,7 +1,11 @@
 <div class="info-container">
 	<div class="quickinfo">
 		<span title="Wann?"><i class="icon-calendar" aria-label="Wann?"></i> <%= date(event.date, 'dd. mmmm yyyy') %></span>
-		<span title="Eintrittspreis"><i class="icon-euro" aria-label="Eintrittspreis"></i> <%= event.fee %></span>
+
+		<% if (event.fee) { %>
+			<span title="Eintrittspreis"><i class="icon-euro" aria-label="Eintrittspreis"></i> <%= event.fee %></span>
+		<% } %>
+
 		<% if (event.twitter.hash) { %>
 			<span>
 				<i class="icon-twitter"></i>
