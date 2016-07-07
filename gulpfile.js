@@ -192,7 +192,7 @@ gulp.task('styles', function() {
 		.pipe(_.sass())
 		.pipe(_.concat(filenames.styles))
 		.pipe(_.autoprefixer())
-		.pipe(_.combineMediaQueries())
+		.pipe(_.groupCssMediaQueries())
 		.pipe(_.minifyCss())
 		.pipe(gulp.dest(out.styles))
 		.pipe(_.connect.reload());
