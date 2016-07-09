@@ -1,6 +1,6 @@
 eventbrite:
   # Event id on Eventbrite (can be found in the URL of the evetn page)
-  id: 18590782531
-  url: http://devfestka2015.eventbrite.de
+  # id: 18590782531
+  # url: http://devfestka2015.eventbrite.de
   # ticket_id: 39125588
   # max_amount: 4

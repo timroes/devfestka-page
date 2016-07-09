@@ -1,11 +1,12 @@
 header {
 	position: relative;
 	width: 100%;
-	background-color: $accent-color;
+	background-color: $highlight-section-bg;
 	text-align: center;
 	box-shadow: 0 0 3px;
 	display: flex;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5rem;
+	font-size: 0;
 }
 
 .banner {
@@ -25,6 +26,7 @@ header {
 	right: 0.8em;
 	top: 0.8em;
 	font-weight: 500;
+	font-size: 18px;
 
 	a {
 		color: #DDD;
