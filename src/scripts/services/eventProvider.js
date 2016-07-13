@@ -5,8 +5,8 @@ angular.module('devfest')
 	 * Returns a boolean whether the event takes place today.
 	 */
 	var isToday = function() {
-	
-		var conferenceDays = ['<%= schedule.data.map(function(el) {return date(el.date, "yyyy-mm-dd"); }).join("','") %>'];
+
+		var conferenceDays = ['<%= schedule_current.map(function(el) {return date(el.date, "yyyy-mm-dd"); }).join("','") %>'];
 
 		// Get the current date formatted as year-month-day.
 		var today = new Date();

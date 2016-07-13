@@ -2,7 +2,9 @@ angular.module('devfest')
 .controller('scheduleController', function($http, $scope, $filter, ngDialog, event) {
 
 	var descriptions = {
-		<% _.forEach(schedule.data, function(day) {
+		<%
+		var sched = schedule.show == 'current' ? schedule_current : schedule_previous;
+		_.forEach(sched, function(day) {
 			_.forEach(day.slots, function(slot) {
 				_.forEach(slot.sessions, function(sess) {
 					if (sess.title && sess.room) { %>
