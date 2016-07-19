@@ -3,7 +3,7 @@ year: 2016
 # The date as printed to the user of the event
 date: 2016-11-21
 # The price of the event (can be any string)
-#fee: kostenlos
+fee: kostenlos
 
 # The description as printed in the information
 description: |
