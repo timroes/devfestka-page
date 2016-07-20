@@ -23,6 +23,9 @@
     #     EclipseSource is a founding member of Eclipse.org with a combined strength of 30+ employees. The company's
     #     headquarters is in Karlsruhe, Germany, with offices in Munich (Germany), Vienna (Austria), Gdynia (Poland),
     #     Portland (USA) and Victoria (Canada).
+    - name: EXXETA
+      url: http://www.exxeta.com
+      logo: assets/sponsors/exxeta.png
     - name: inovex
       url: https://www.inovex.de
       logo: assets/sponsors/inovex.svg
