@@ -32,9 +32,9 @@
     # - name: intel
     #   url: https://software.intel.com/android
     #   logo: assets/sponsors/intel.png
-    # - name: thinktecture
-    #   url: http://www.thinktecture.de
-    #   logo: assets/sponsors/thinktecture.png
+    - name: thinktecture
+      url: http://www.thinktecture.de
+      logo: assets/sponsors/thinktecture.png
     #   description: |
     #     Thinktecture ist ein Team von Technologie-Enthusiasten mit großer Leidenschaft für das Web,
     #     Javascript, SPA-Frameworks und skalierbaren Backends zur Entwicklung von Cross-Plattform
