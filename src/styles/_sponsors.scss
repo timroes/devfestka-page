@@ -27,7 +27,11 @@
 
 .sponsor-group .sponsor {
 	display: inline-block;
-	margin: 0.8em;
+	margin: 0.8em 1.5em;
+
+	@include tablet {
+		margin: 0.8em;
+	}
 
 	@include phone {
 		margin: 1.2em 0.8em;
@@ -56,4 +60,3 @@
 		color: black;
 	}
 }
-
