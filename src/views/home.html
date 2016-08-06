@@ -89,26 +89,17 @@
 	</ui-gmap-google-map>
 </div>
 
-<div class="sponsors">
+<div class="sponsors" ng-controller="SponsorController as sponsorCtrl">
 	<a id="sponsoren" class="anchor"></a>
 
-	<% _.forEach(sponsors, function(group) { %>
-		<h2><%= group.group %></h2>
-		<div class="sponsor-group">
-		<% _.forEach(group.sponsors, function(sponsor) { %>
-			<% if (sponsor.description) { %>
-				<button type="button" ng-dialog="<%= idfor(sponsor.name) %>" ng-dialog-class="ngdialog ngdialog-theme-default sponsor-dialog" class="sponsor" title="<%= sponsor.name %>"><img src="<%= sponsor.logo %>"></button>
-				<script type="text/ng-template" id="<%= idfor(sponsor.name) %>">
-					<h1><%= sponsor.name %></h1>
-					<a href="<%= sponsor.url %>" target="_blank"><i class="icon-link-ext"></i> <%= sponsor.url %></a>
-					<%= text(sponsor.description) %>
-				</script>
-			<% } else { %>
-				<a href="<%= sponsor.url %>" target="_blank" class="sponsor" title="<%= sponsor.name %>"><img src="<%= sponsor.logo %>"></a>
-			<% } %>
-		<% }); %>
-		</div>
-	<% }); %>
+	<div ng-repeat="sponsorgroup in sponsorCtrl.sponsors">
+			<h2>{{::sponsorgroup.group}}</h2>
+			<div class="sponsor-group">
+				<a ng-repeat="sponsor in sponsorgroup.sponsors" ng-href="{{::sponsor.url}}" class="sponsor" title="{{::sponsor.name}}" target="_blank">
+					<img ng-src="{{::sponsor.logo}}">
+				</a>
+			</div>
+	</div>
 
 	<% if (event.sponsorinformation) { %>
 		<a class="boxlink sponsor-information" href="<%= event.sponsorinformation %>" target="_blank">Werden Sie Sponsor!</a>

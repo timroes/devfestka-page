@@ -1,4 +1,4 @@
-angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate', 'ngDialog', 'ngSanitize', 'uiGmapgoogle-maps', 'duScroll'])
+angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate', 'ngDialog', 'ngSanitize', 'uiGmapgoogle-maps', 'duScroll', 'LocalStorageModule'])
 .config(function($routeProvider, $locationProvider, eventProvider) {
 	$locationProvider.html5Mode({
 		enabled: true
@@ -19,6 +19,9 @@ angular.module('devfest', ['ngRoute', 'templates', 'ngAnimate', 'ngDialog', 'ngS
 		.otherwise({
 			redirectTo: eventProvider.isToday() ? '/programm' : '/info'
 		});
+})
+.config(function(localStorageServiceProvider) {
+	localStorageServiceProvider.setPrefix('devfest');
 })
 .config(function(uiGmapGoogleMapApiProvider) {
 	uiGmapGoogleMapApiProvider.configure({
