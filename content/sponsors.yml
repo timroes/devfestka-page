@@ -21,14 +21,14 @@
     - name: thinktecture
       url: http://www.thinktecture.de
       logo: assets/sponsors/thinktecture.png
-# - group: Silbersponsoren
-#   sponsors:
+- group: Silbersponsoren
+  sponsors:
 #     - name: blukii
 #       url: http://www.blukii.com
 #       logo: assets/sponsors/blukii.png
-#     - name: bridgingIT
-#       url: http://www.bridging-it.de
-#       logo: assets/sponsors/bridgingIT.jpg
+    - name: bridgingIT
+      url: http://www.bridging-it.de
+      logo: assets/sponsors/bridgingIT.jpg
 #     - name: FILIADATA
 #       url: https://www.dm.de/unternehmen/arbeiten-und-lernen/arbeiten-bei-uns/filiadata-c534052.html
 #       logo: assets/sponsors/dm.png
