@@ -6,6 +6,9 @@
     # - name: EclipseSource
     #   url: http://eclipsesource.com
     #   logo: assets/sponsors/eclipsesource.svg
+    - name: diva-e | Netpioneer GmbH
+      url: https://netpioneer.de/
+      logo: assets/sponsors/diva-e.png
     - name: EXXETA
       url: http://www.exxeta.com
       logo: assets/sponsors/exxeta.png
