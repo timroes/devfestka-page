@@ -7,13 +7,13 @@ before:
   previous: |
     Das Programm für 2016 wird ab Anfang September hier veröffentlicht.
 
-# after:
-#   - title: Open Hacking Area
-#     text: |
-#       Neben den Vorträgen wird es den ganzen Tag über eine Open Hacking Area geben.
-#       Dort könnt ihr euch mit Gleichgesinnten einen Tisch schnappen und einfach drauf
-#       los hacken und eure Ideen umsetzen.
-#
-#       Zusätzlich wird dort diverse IoT Hardware zur Verfügung stehen. Falls ihr euch also
-#       schon immer einmal daran versuchen wolltet von einem Arduino oder einem RaspberryPi aus
-#       Sensoren anzusteuern, findet ihr hier auch die notwendige Hardware.
+after:
+    - title: Workshop: Arduino + Bluetooth + Android
+      text: |
+        Am Vor- und am Nachmittag wird es jeweils einen betreuten Workshop geben, 
+        bei dem ihr eine Anwendung auf Basis eines Arduino entwickelt, 
+        diese per Bluetooth mit ihrem Android-Smartphone verbindet und anschließend
+        eine App schreibt, um darauf zuzugreifen und sie zu steuern. 
+
+        Die Hardware sowie ein Grundgerüst für die App werden natürlich zur Verfügung
+        gestellt, um einen reibungslosen Ablauf zu gewährleisten.
