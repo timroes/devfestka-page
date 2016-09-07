@@ -44,3 +44,9 @@
 #     - name: synyx
 #       url: http://www.synyx.de
 #       logo: assets/sponsors/synyx.png
+
+- group: Medienpartner
+  sponsors:
+    - name: CyberForum
+      url: https://www.cyberforum.de
+      logo: assets/partners/cyberforum.png
