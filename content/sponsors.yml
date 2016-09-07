@@ -12,6 +12,9 @@
     - name: EXXETA
       url: http://www.exxeta.com
       logo: assets/sponsors/exxeta.png
+    - name: HeidelbergCement
+      url: http://www.heidelbergcement.com
+      logo: assets/sponsors/heidelbergcement.jpg
     - name: inovex
       url: https://www.inovex.de
       logo: assets/sponsors/inovex.svg

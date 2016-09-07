@@ -95,7 +95,7 @@
 	<div ng-repeat="sponsorgroup in sponsorCtrl.sponsors">
 			<h2>{{::sponsorgroup.group}}</h2>
 			<div class="sponsor-group">
-				<a ng-repeat="sponsor in sponsorgroup.sponsors" ng-href="{{::sponsor.url}}" class="sponsor" title="{{::sponsor.name}}" target="_blank">
+				<a ng-repeat="sponsor in sponsorgroup.sponsors" ng-href="{{::sponsor.url}}" class="sponsor" title="{{::sponsor.name}}" target="_blank" rel="noopener">
 					<img ng-src="{{::sponsor.logo}}">
 				</a>
 			</div>
