@@ -15,9 +15,7 @@ $border_style: 1px solid #DDD;
 }
 
 .schedule-day {
-	display: table;
-	border-collapse: collapse;
-	border: $border_style;
+	display: block;
 	width: 100%;
 	margin-bottom: 1em;
 
@@ -29,13 +27,16 @@ $border_style: 1px solid #DDD;
 }
 
 .timeslot {
-	display: table-row;
+	display: flex;
 	width: 100%;
 	border: $border_style;
+
+	& + .timeslot {
+		border-top: none;
+	}
 }
 
 .timeslot-label {
-	display: table-cell;
 	font-weight: 200;
 	text-align: left;
 	font-size: 120%;
@@ -52,19 +53,16 @@ $border_style: 1px solid #DDD;
 }
 
 .timeslot-items {
-	display: table-cell;
+	display: flex;
 	border-left: $border_style;
 	width: 100%;
-	// background-color: rgba(0, 255, 0, 0.2);
 	vertical-align: top;
 }
 
 .timeslot-item {
-	display: table-cell;
+	flex: 1 1 0;
 	position: relative;
 	vertical-align: top;
-	// background-color: rgba(255,0,0,0.2);
-	// width: 33%;
 	font-weight: 300;
 	overflow: hidden;
 	cursor: default;
@@ -76,22 +74,11 @@ $border_style: 1px solid #DDD;
 	}
 }
 
-.tracks-2 .timeslot-item {
-	width: 50%;
-}
-.tracks-3 .timeslot-item {
-	width: 33%;
-}
-.tracks-4 .timeslot-item {
-	width: 25%;
-}
-
 .timeslot-item + .timeslot-item {
 	border-left: $border_style;
 }
 
 .timeslot-item__content {
-	position: relative;
 	padding: 0.5em;
 }
 
@@ -153,17 +140,37 @@ $border_style: 1px solid #DDD;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.timeslot-item .tags {
+	display: block;
+	text-transform: uppercase;
+	font-size: 75%;
+	margin-bottom: 0.5em;
+	position: absolute;
+	bottom: 0.2em;
+	right: 0.3em;
+}
+
+.timeslot-item .tag {
+	padding: 0.15em 0.25em;
+	border-radius: 2px;
+	background-color: $accent-color;
+	color: white;
+}
+
 .timeslot-item__video {
 	color: #666;
 }
 
 @include phone {
-	.timeslot-item:not(.spanning) {
-		display: block;
-		width: 100%;
+	.timeslot {
+		border-left: none;
+		border-right: none;
 	}
-	.timeslot-item.empty {
-		display: none;
+	.timeslot-items {
+		flex-wrap: wrap;
+	}
+	.timeslot-item:not(.spanning) {
+		flex: 0 0 100%;
 	}
 	.timeslot-item + .timeslot-item {
 		border-left: none;

@@ -47,6 +47,11 @@
 								<% if (sess.video) { %><i class="timeslot-item__video icon-video"></i><% } %>
 								<%= sess.title %> <span class="timeslot-item__lang"><%= sess.lang %></span>
 							</h1>
+							<% if(sess.tags) { %>
+								<span class="tags">
+										<span class="tag"><%= sess.tags %></span>
+								</span>
+							<% } %>
 							<% if(sess.speaker) { %>
 								<span class="speaker"><%= join(sess.speaker, ', ') %></span>
 							<% } %>
@@ -55,9 +60,6 @@
 						<% } %>
 					</div>
 					<% }); %>
-					<% for (var i = 0; i < tracks - slot.sessions.length; i++) { %>
-					<div class="timeslot-item empty"></div>
-					<% } %>
 				</div>
 			</div>
 			<% }); %>

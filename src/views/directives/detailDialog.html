@@ -2,12 +2,12 @@
 	<h1>{{ session.title }}</h1>
 
 	<div ng-if="session.video" class="session__video">
-		<i class="icon-video"></i> 
+		<i class="icon-video"></i>
 		<a class="session__videolink" target="_blank" ng-if="session.video" href="{{ session.video }}">Video anschauen</a>
 	</div>
 
 	<span class="speaker" ng-if="session.speaker && !session.speakerlink">{{ session.speaker }}</span>
-	<a ng-if="session.speaker && session.speakerlink" class="speakerlink" href="{{ session.speakerlink }}" target="_blank">{{ session.speaker }}</a>
+	<a ng-if="session.speaker && session.speakerlink" class="speakerlink" href="{{ session.speakerlink }}" rel="noopener" target="_blank">{{ session.speaker }}</a>
 	<div class="sessmeta" ng-if="session.room">
 		<span class="sessmeta__label sessdialog__room">
 			Raum: <span class="sessmeta__text">{{ session.room }}</span>

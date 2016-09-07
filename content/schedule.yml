@@ -1,5 +1,5 @@
 # Whether to show the "current" or "previous" schedule on the schedule page.
-show: previous
+show: current
 # Text that will be shown above the schedule, depending whether the current or the previous schedule is shown.
 before:
   current: |
@@ -10,10 +10,10 @@ before:
 after:
     - title: Workshop: Arduino + Bluetooth + Android
       text: |
-        Am Vor- und am Nachmittag wird es jeweils einen betreuten Workshop geben, 
-        bei dem ihr eine Anwendung auf Basis eines Arduino entwickelt, 
+        Am Vor- und am Nachmittag wird es jeweils einen betreuten Workshop geben,
+        bei dem ihr eine Anwendung auf Basis eines Arduino entwickelt,
         diese per Bluetooth mit ihrem Android-Smartphone verbindet und anschließend
-        eine App schreibt, um darauf zuzugreifen und sie zu steuern. 
+        eine App schreibt, um darauf zuzugreifen und sie zu steuern.
 
         Die Hardware sowie ein Grundgerüst für die App werden natürlich zur Verfügung
         gestellt, um einen reibungslosen Ablauf zu gewährleisten.
