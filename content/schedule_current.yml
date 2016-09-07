@@ -219,7 +219,7 @@
             In diesem Vortrag wird auf einen wichtigen Teil vieler Android Apps eingegangen: Timing. Dabei hat sich seit Android Marshmallow und Nougat durch den Doze Mode und das App Standby einiges geändert. In diesem Vortrag soll es um die verschiedenen Möglichkeiten gehen, wie man Aufgaben in Android vernünftig timen und auslösen kann. Dabei werden verschiedene Ansätze besprochen und verglichen (bspw. Alarmmanager, JobScheduler, GcmJobManager) und wie sich diese in den verschiedenen Android Versionen verhalten. Es werden abschließend Best Practices gegeben, welche Wahl in den verschiedensten Anwendungsfällen getroffen werden sollte.
           tags: Android
           room: Schauburg
-        - title: Live-Coding: AngularJS-Enwicklung mit TDD
+        - title: Live-Coding: AngularJS-Entwicklung mit TDD
           lang: de
           speaker: Christian Fillibeck, Rouven Röhrig, Markus Vock, Michael Zugelder
           audience: Intermediates
