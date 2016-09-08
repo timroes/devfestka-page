@@ -4,6 +4,9 @@ show: current
 before:
   current: |
     Das Programm steht! Da sich kurzfristig Änderungen ergeben können, empfehlen wir, regelmäßig vorbei zu schauen.
+
+    Da es sich bei der Schauburg um ein historisches Gebäude handelt, ist leider nur der Raum "Schauburg" barrierefrei
+    und ohne Treppen und Stufen zu erreichen. Wir bitten um euer Verständnis.
   previous: |
     Das Programm für 2016 wird ab Anfang September hier veröffentlicht.
 
