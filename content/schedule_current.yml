@@ -16,22 +16,10 @@
     - from: 09:15
       to: 10:15
       sessions:
-        - title: Automate *all the things*
-          lang: en
-          speaker: Marc Reichelt
-          room: Schauburg
-          abstract: |
-            Marc from flinc will show you how he went from a legacy Android app with no automated builds or tests
-            to a heavily-automated environment – and how you can, too!
-            Let the robots do all the work for you: build the APKs, automated alpha releases on Google Play,
-            run all the tests, run emulators along UI tests, check your code and find some probable bugs automatically and more!
-          audience: Intermediates
-          tags: Android
-          speakerlink: https://twitter.com/mreichelt
         - title: Progressive Web Apps
           lang: de
           speaker: Jonas Moosmann
-          room: Cinema
+          room: Schauburg
           abstract: |
             Moderne Web-Applikationen werden immer mächtiger und können zunehmend nativen Applikationen die Stirn bieten.
             Insbesondere im mobilen Umfeld spielt dies eine große Rolle, da sich so hohe Entwicklungsaufwände vermeiden lassen.
@@ -42,6 +30,18 @@
           audience: Beginners
           tags: Web
           speakerlink: https://twitter.com/jonasmoosmann
+        - title: Automate *all the things*
+          lang: en
+          speaker: Marc Reichelt
+          room: Cinema
+          abstract: |
+            Marc from flinc will show you how he went from a legacy Android app with no automated builds or tests
+            to a heavily-automated environment – and how you can, too!
+            Let the robots do all the work for you: build the APKs, automated alpha releases on Google Play,
+            run all the tests, run emulators along UI tests, check your code and find some probable bugs automatically and more!
+          audience: Intermediates
+          tags: Android
+          speakerlink: https://twitter.com/mreichelt
         - title: The Awesomeness of Go
           lang: en
           speaker: Igor Lankin
@@ -62,17 +62,6 @@
     - from: 10:45
       to: 11:45
       sessions:
-        - title: Mobile Apps mit Angular und Cordova
-          lang: de
-          speaker: Christian Janz
-          audience: Intermediates
-          speakerlink: https://twitter.com/c_janz
-          abstract: |
-            Mit HTML5 und Angular lassen sich komplexe Web-Anwendungen ziemlich effizient entwickeln. Warum sollte man damit also nicht auch Mobile Apps entwickeln? Die Vorteile liegen auf der Hand: Statt die App für jede Plattform mit dem jeweiligen Toolset neu zu entwickeln, entwickelt man die App nur einmal. Frameworks wie Apache Cordova ermöglichen zudem den Zugriff auf Gerätehardware und die Erstellung von Paketen für die App Stores.
-            Diese Session gibt einen Überblick, was mit Angular und Cordova möglich ist, und was man beim Einsatz beachten sollte.
-            Vorkenntnisse im Bereich HTML5 und Angular sind hilfreich, aber nicht zwingend notwendig.
-          tags: Mobile
-          room: Schauburg
         - title: Getting Started with Firebase
           lang: de
           speaker: Johannes Reuter
@@ -83,6 +72,17 @@
             Dieser Vortrag erklärt das grundsätzliche Konzept und zeigt, wie sich mit dem Provider Firebase innerhalb von kürzester Zeit komplette, echtzeitfähige Web-Anwendungen entwickeln lassen.
             Die vielen zusätzlichen Features, die Firebase rund um die Basis-Funktionalität anbietet, machen den Unterschied zwischen einem Wochenend-Projekt und einer richtigen, produktiven Anwendung.
           tags: Web
+          room: Schauburg
+        - title: Mobile Apps mit Angular und Cordova
+          lang: de
+          speaker: Christian Janz
+          audience: Intermediates
+          speakerlink: https://twitter.com/c_janz
+          abstract: |
+            Mit HTML5 und Angular lassen sich komplexe Web-Anwendungen ziemlich effizient entwickeln. Warum sollte man damit also nicht auch Mobile Apps entwickeln? Die Vorteile liegen auf der Hand: Statt die App für jede Plattform mit dem jeweiligen Toolset neu zu entwickeln, entwickelt man die App nur einmal. Frameworks wie Apache Cordova ermöglichen zudem den Zugriff auf Gerätehardware und die Erstellung von Paketen für die App Stores.
+            Diese Session gibt einen Überblick, was mit Angular und Cordova möglich ist, und was man beim Einsatz beachten sollte.
+            Vorkenntnisse im Bereich HTML5 und Angular sind hilfreich, aber nicht zwingend notwendig.
+          tags: Mobile
           room: Cinema
         - title: Continuous Deployment mit Docker und Jenkins
           lang: de
@@ -132,15 +132,6 @@
     - from: 13:45
       to: 14:45
       sessions:
-        - title: Building Software at Google Scale
-          lang: en
-          speaker: Christian Schneider
-          audience: Beginners
-          speakerlink:
-          abstract: |
-            I will give an overview of the software development experience and philosophy at Google. Given the impressive size of Google's codebase in any dimension (e.g., 2 billion lines of code), Google employees have built a complete suite of tools to support efficient software development for more than 20k engineers working in dozens of offices around the globe. I will highlight some of these tools, describe how the source, build, and test infrastructure is integrated into one cohesive workflow, and how this workflow enables developers to build high­-quality software at Google scale.
-          tags: Tooling
-          room: Schauburg
         - title: Eine für alles: TypeScript für Client & Server - echtes Cross-Plattform
           lang: de
           speaker: Christian Weyer
@@ -149,6 +140,15 @@
           abstract: |
             Mit einer Programmiersprache Anwendungen für alle Plattformen bauen - egal ob es eine lokal laufende "App" ist oder es sich aber um ein mitunter komplexeres verteiltes System mit Clients und Servern handelt. In dieser Session zeigt Ihnen Christian Weyer wie man mit der Open-Source-Sprache TypeScript genau diese Wunschvorstellung realisieren kann. Gepaart mit Client Frameworks wie Angular 2 und Server-Umgebungen wie node.js ist dies in 2016 kein Hexenwerk mehr. Wir schreiben Code der auf sprichwörtlich allen Client-Plattformen und -Systemen läuft und sich Quelltext teilen kann mit Server-Lösungen, welche auf allen relevanten Betriebssystemen ausgeführt werden können. Zu schön um wahr zu sein? Schauen wir es uns gemeinsam an!
           tags: Web
+          room: Schauburg
+        - title: Building Software at Google Scale
+          lang: en
+          speaker: Christian Schneider
+          audience: Beginners
+          speakerlink:
+          abstract: |
+            I will give an overview of the software development experience and philosophy at Google. Given the impressive size of Google's codebase in any dimension (e.g., 2 billion lines of code), Google employees have built a complete suite of tools to support efficient software development for more than 20k engineers working in dozens of offices around the globe. I will highlight some of these tools, describe how the source, build, and test infrastructure is integrated into one cohesive workflow, and how this workflow enables developers to build high­-quality software at Google scale.
+          tags: Tooling
           room: Cinema
         - title: A.I. - Is Skynet Knocking On Our Doors?
           lang: en
@@ -162,20 +162,6 @@
     - from: 14:45
       to: 15:45
       sessions:
-        - title: Safe vs Deep integration of Realm
-          lang: en
-          speaker: Viraj Tank
-          audience: Intermediates
-          speakerlink: https://twitter.com/viraj49
-          abstract: |
-            Realm: A fast and secure database for Android, which is easy to learn and integrate.
-
-            Have you heard good things about Realm and considered replacing SQLite or ORM with Realm?
-            Do you know that with tons of advantages, Realm also brings some limitations?
-            Have you faced thread handling issues with Realm?
-            If yes, we will discuss different integration approaches of Realm and best practices to follow, along with RxJava, Retrofit, Dagger, Annotations & MVP.
-          tags: Android
-          room: Schauburg
         - title: Angular 2 - Concepts and Jumpstart
           lang: de
           speaker: Andreas Jägle
@@ -190,7 +176,7 @@
 
             Der Vortrag geht auf die Unterschiede zu Version 1 ein und erzählt den nicht immer einfachen Weg während der Beta- und RC-Phase.
           tags: Web
-          room: Cinema
+          room: Schauburg
         - title: Digital Assistants and Conversational Bots
           lang: en
           speaker: Lukas Masuch
@@ -202,6 +188,17 @@
             In this session, we will introduce the concept of conversational UIs and digital assistants and explain why and how to combine these two concepts. Furthermore, we will go through the technical details and tools that are required to build a conversational assistant.
 
           tags: Machine Learning
+          room: Cinema
+        - title: Data Mangling with MongoDB the Right Way
+          lang: en
+          speaker: Alexander Hendorf
+          audience: Intermediates
+          speakerlink: https://twitter.com/hendorf
+          abstract: |
+            MongoDB provides MapReduce and an own aggregation framework. The use cases and the performance of the two are very different. Often the power and flexibilty of the aggregation framework is overseeen.
+            Learn when to use MapReduce or the aggregation framework. Many live examples provided.
+            Soon MongoDB Atlas, an elastic, on-demand cloud service will also be available for the Google Cloud Platform. So, time to get ready…
+          tags: Infrastructure
           room: Bambi
     - from: 15:45
       to: 16:15
