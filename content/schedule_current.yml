@@ -156,7 +156,8 @@
           audience: Beginners
           speakerlink: https://twitter.com/raethlein
           abstract: |
-            Artificial Intelligence, Machine Learning, Deep Learning, or Bots are not only buzzwords used by the big five anymore. They are at your fingertips and are waiting to be used in your own applications. Whether you start a new application from scratch or working on a legacy system, there are always possibilities to improve your system by leveraging machine intelligence. The overwhelming jungle of modern technologies and algorithms can be daunting for any developer. In this talk, we take you by the hand and show you how to make your applications smarter by using state-of-the-art tools and techniques.          tags: Machine Learning
+            Artificial Intelligence, Machine Learning, Deep Learning, or Bots are not only buzzwords used by the big five anymore. They are at your fingertips and are waiting to be used in your own applications. Whether you start a new application from scratch or working on a legacy system, there are always possibilities to improve your system by leveraging machine intelligence. The overwhelming jungle of modern technologies and algorithms can be daunting for any developer. In this talk, we take you by the hand and show you how to make your applications smarter by using state-of-the-art tools and techniques.
+          tags: Machine Learning
           room: Bambi
     - from: 14:45
       to: 15:45
