@@ -150,14 +150,13 @@
             I will give an overview of the software development experience and philosophy at Google. Given the impressive size of Google's codebase in any dimension (e.g., 2 billion lines of code), Google employees have built a complete suite of tools to support efficient software development for more than 20k engineers working in dozens of offices around the globe. I will highlight some of these tools, describe how the source, build, and test infrastructure is integrated into one cohesive workflow, and how this workflow enables developers to build high­-quality software at Google scale.
           tags: Tooling
           room: Cinema
-        - title: A.I. - Is Skynet Knocking On Our Doors?
+        - title: Everyday machine intelligence for your everyday applications
           lang: en
           speaker: Benjamin Räthlein & Henning Muszynski
           audience: Beginners
           speakerlink: https://twitter.com/raethlein
           abstract: |
-            In this talk we want to present a brief overview of the development and history of artificial intelligence in the sense of machine & deep learning. In this context, we will show the core principles of the different methods and present the bleeding-edge state of nowadays possibilities. By showing the different opinions of world leaders in this field, we want to clear the question: Is media exaggerating playing with our fears or will we be soon Matrix-like enslaved by machines?
-          tags: Machine Learning
+            Artificial Intelligence, Machine Learning, Deep Learning, or Bots are not only buzzwords used by the big five anymore. They are at your fingertips and are waiting to be used in your own applications. Whether you start a new application from scratch or working on a legacy system, there are always possibilities to improve your system by leveraging machine intelligence. The overwhelming jungle of modern technologies and algorithms can be daunting for any developer. In this talk, we take you by the hand and show you how to make your applications smarter by using state-of-the-art tools and techniques.          tags: Machine Learning
           room: Bambi
     - from: 14:45
       to: 15:45
