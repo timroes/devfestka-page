@@ -12,6 +12,9 @@
     - name: EXXETA
       url: http://www.exxeta.com
       logo: assets/sponsors/exxeta.png
+    - name: FILIADATA
+      url: https://www.dm.de/unternehmen/arbeiten-und-lernen/arbeiten-bei-uns/filiadata-c534052.html
+      logo: assets/sponsors/dm.png
     - name: HeidelbergCement
       url: http://www.heidelbergcement.com
       logo: assets/sponsors/heidelbergcement.jpg
@@ -35,9 +38,7 @@
     - name: bridgingIT
       url: http://www.bridging-it.de
       logo: assets/sponsors/bridgingIT.jpg
-#     - name: FILIADATA
-#       url: https://www.dm.de/unternehmen/arbeiten-und-lernen/arbeiten-bei-uns/filiadata-c534052.html
-#       logo: assets/sponsors/dm.png
+
 #
 # - group: Bronzesponsoren
 #   sponsors:
