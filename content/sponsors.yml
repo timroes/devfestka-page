@@ -54,3 +54,6 @@
     - name: CyberForum
       url: https://www.cyberforum.de
       logo: assets/partners/cyberforum.png
+    - name: PionierGarage e.V.
+      url: http://www.pioniergarage.de
+      logo: assets/partners/pioniergarage.svg

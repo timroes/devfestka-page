@@ -96,15 +96,14 @@
     - from: 11:45
       to: 12:45
       sessions:
-        - title: Moderne Android-App - Aber wie?
+        - title: Eine für alles: TypeScript für Client & Server - echtes Cross-Plattform
           lang: de
-          speaker: Daniel Bälz
-          audience: Intermediates
-          speakerlink: http://dbaelz.de/
+          speaker: Christian Weyer
+          audience: Beginners
+          speakerlink:
           abstract: |
-            Beim Erstellen einer Android-App “from scratch” stellen sich zunächst viele Fragen: Welche Architektur, Pattern und Bibliotheken sollen verwendet werden? Was ist heute angesagt und doch in einigen Monaten und Jahren noch vorhanden? Wie erstelle ich eine App damit sie (“dieses mal aber wirklich”) gut wartbar, testbar und strukturiert bleibt?
-            Dies sind alles Fragen, welche sich der Vortragende und seine Kollegen bei der Entwicklung einer weit verbreiteten App gestellt haben und immer wieder von neuem stellen. Im Vortrag werden die Fragen und Lösungsansätze anhand dieser App erläutert und die Lehren aus der bisherigen Entwicklung vorgestellt.
-          tags: Android
+            Mit einer Programmiersprache Anwendungen für alle Plattformen bauen - egal ob es eine lokal laufende "App" ist oder es sich aber um ein mitunter komplexeres verteiltes System mit Clients und Servern handelt. In dieser Session zeigt Ihnen Christian Weyer wie man mit der Open-Source-Sprache TypeScript genau diese Wunschvorstellung realisieren kann. Gepaart mit Client Frameworks wie Angular 2 und Server-Umgebungen wie node.js ist dies in 2016 kein Hexenwerk mehr. Wir schreiben Code der auf sprichwörtlich allen Client-Plattformen und -Systemen läuft und sich Quelltext teilen kann mit Server-Lösungen, welche auf allen relevanten Betriebssystemen ausgeführt werden können. Zu schön um wahr zu sein? Schauen wir es uns gemeinsam an!
+          tags: Web
           room: Schauburg
         - title: Web-Apps in spezieller Umgebung: Die Neuentwicklung des dm-Servicepunkts
           lang: de
@@ -132,15 +131,6 @@
     - from: 13:45
       to: 14:45
       sessions:
-        - title: Eine für alles: TypeScript für Client & Server - echtes Cross-Plattform
-          lang: de
-          speaker: Christian Weyer
-          audience: Beginners
-          speakerlink:
-          abstract: |
-            Mit einer Programmiersprache Anwendungen für alle Plattformen bauen - egal ob es eine lokal laufende "App" ist oder es sich aber um ein mitunter komplexeres verteiltes System mit Clients und Servern handelt. In dieser Session zeigt Ihnen Christian Weyer wie man mit der Open-Source-Sprache TypeScript genau diese Wunschvorstellung realisieren kann. Gepaart mit Client Frameworks wie Angular 2 und Server-Umgebungen wie node.js ist dies in 2016 kein Hexenwerk mehr. Wir schreiben Code der auf sprichwörtlich allen Client-Plattformen und -Systemen läuft und sich Quelltext teilen kann mit Server-Lösungen, welche auf allen relevanten Betriebssystemen ausgeführt werden können. Zu schön um wahr zu sein? Schauen wir es uns gemeinsam an!
-          tags: Web
-          room: Schauburg
         - title: Building Software at Google Scale
           lang: en
           speaker: Christian Schneider
@@ -149,6 +139,16 @@
           abstract: |
             I will give an overview of the software development experience and philosophy at Google. Given the impressive size of Google's codebase in any dimension (e.g., 2 billion lines of code), Google employees have built a complete suite of tools to support efficient software development for more than 20k engineers working in dozens of offices around the globe. I will highlight some of these tools, describe how the source, build, and test infrastructure is integrated into one cohesive workflow, and how this workflow enables developers to build high­-quality software at Google scale.
           tags: Tooling
+          room: Schauburg
+        - title: Moderne Android-App - Aber wie?
+          lang: de
+          speaker: Daniel Bälz
+          audience: Intermediates
+          speakerlink: http://dbaelz.de/
+          abstract: |
+            Beim Erstellen einer Android-App “from scratch” stellen sich zunächst viele Fragen: Welche Architektur, Pattern und Bibliotheken sollen verwendet werden? Was ist heute angesagt und doch in einigen Monaten und Jahren noch vorhanden? Wie erstelle ich eine App damit sie (“dieses mal aber wirklich”) gut wartbar, testbar und strukturiert bleibt?
+            Dies sind alles Fragen, welche sich der Vortragende und seine Kollegen bei der Entwicklung einer weit verbreiteten App gestellt haben und immer wieder von neuem stellen. Im Vortrag werden die Fragen und Lösungsansätze anhand dieser App erläutert und die Lehren aus der bisherigen Entwicklung vorgestellt.
+          tags: Android
           room: Cinema
         - title: Deep Learning - The Past, Present and Future of Artificial Intelligence
           lang: en
@@ -157,12 +157,10 @@
           speakerlink: http://lukasmasuch.com
           abstract: |
             TLDR: This talk is a basic introduction to Deep Learning
-
-            It’s long ago, approx. 30 years, since AI was not only a topic for Science-Fiction writers, but also a major research field surrounded with huge hopes and investments. But the over-inflated expectations ended in a subsequent crash and followed by a period of absent funding and interest – the so-called AI winter. However, the last 3 years changed everything – again. Deep learning, a machine learning technique inspired by the human brain, successfully crushed one benchmark after another and tech companies, like Google, Facebook and Microsoft, started to invest billions in AI research. “The pace of progress in artificial general intelligence is incredible fast” (Elon Musk – CEO Tesla & SpaceX) leading to an AI that “would be either the best or the worst thing ever to happen to humanity” (Stephen Hawking – Physicist).
-
-            What sparked this new Hype? How is Deep Learning different from previous approaches? Are the advancing AI technologies really a threat for humanity? Let’s look behind the curtain and unravel the reality. This talk will introduce the core concept of deep learning, explore why Sundar Pichai (CEO Google) recently announced that “machine learning is a core transformative way by which Google is rethinking everything they are doing” and explain why "Deep Learning is probably one of the most exciting things that is happening in the computer industry” (Jen-Hsun Huang – CEO NVIDIA).
-
-            Either a new AI “winter is coming” or this new wave of innovation might turn out as the “last invention humans ever need to make” (Nick Bostrom – AI Philosoph). Or maybe it’s just another great technology helping humans to achieve more.
+            
+            In the last couple of years, deep learning techniques have transformed the world of artificial intelligence. One by one, the abilities and techniques that humans once imagined were uniquely our own have begun to fall to the onslaught of ever more powerful machines. Deep neural networks are now better than humans at tasks such as face recognition and object recognition. They’ve mastered the ancient game of Go and thrashed the best human players. “The pace of progress in artificial general intelligence is incredible fast” (Elon Musk – CEO Tesla & SpaceX) leading to an AI that “would be either the best or the worst thing ever to happen to humanity” (Stephen Hawking – Physicist). 
+            
+            What sparked this new hype? How is Deep Learning different from previous approaches? Let’s look behind the curtain and unravel the reality. This talk will introduce the core concept of deep learning, explore why Sundar Pichai (CEO Google) recently announced that “machine learning is a core transformative way by which Google is rethinking everything they are doing” and explain why “deep learning is probably one of the most exciting things that is happening in the computer industry“ (Jen-Hsun Huang – CEO NVIDIA).
           tags: Machine Learning
           room: Bambi
     - from: 14:45
