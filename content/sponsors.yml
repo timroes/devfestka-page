@@ -43,11 +43,11 @@
       logo: assets/sponsors/bridgingIT.jpg
 
 #
-# - group: Bronzesponsoren
-#   sponsors:
-#     - name: synyx
-#       url: http://www.synyx.de
-#       logo: assets/sponsors/synyx.png
+- group: Bronzesponsoren
+  sponsors:
+    - name: billiger.de
+      url: http://company.billiger.de/jobs/
+      logo: assets/sponsors/billiger.png
 
 - group: Medienpartner
   sponsors:
