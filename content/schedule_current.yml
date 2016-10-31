@@ -131,13 +131,13 @@
     - from: 13:45
       to: 14:45
       sessions:
-        - title: Building Software at Google Scale
+        - title: Bazel: Building at Google Scale
           lang: en
-          speaker: Christian Schneider
+          speaker: Damien Martin-Guillerez
           audience: Beginners
-          speakerlink:
+          speakerlink: https://bazel.build
           abstract: |
-            I will give an overview of the software development experience and philosophy at Google. Given the impressive size of Google's codebase in any dimension (e.g., 2 billion lines of code), Google employees have built a complete suite of tools to support efficient software development for more than 20k engineers working in dozens of offices around the globe. I will highlight some of these tools, describe how the source, build, and test infrastructure is integrated into one cohesive workflow, and how this workflow enables developers to build high­-quality software at Google scale.
+            To come...
           tags: Tooling
           room: Schauburg
         - title: Moderne Android-App - Aber wie?
