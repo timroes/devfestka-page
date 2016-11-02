@@ -137,7 +137,7 @@
           audience: Beginners
           speakerlink: https://bazel.build
           abstract: |
-Google builds software for billions of users in one single gigantic repository of around 2 billion lines of code. Google engineers have developed a full suite of tools to support software development at that scale. Among those tools is Bazel, Google's own build system that was open-sourced in March 2015. This talk will give an overview of the tool suite that serves more than 30k engineers around the globe with a focus on the build infrastructure. It will then present Bazel and the properties that make it an essential piece of that build infrastructure.
+            Google builds software for billions of users in one single gigantic repository of around 2 billion lines of code. Google engineers have developed a full suite of tools to support software development at that scale. Among those tools is Bazel, Google's own build system that was open-sourced in March 2015. This talk will give an overview of the tool suite that serves more than 30k engineers around the globe with a focus on the build infrastructure. It will then present Bazel and the properties that make it an essential piece of that build infrastructure.
           tags: Tooling
           room: Schauburg
         - title: Moderne Android-App - Aber wie?
