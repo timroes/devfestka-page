@@ -62,16 +62,14 @@
     - from: 10:45
       to: 11:45
       sessions:
-        - title: Getting Started with Firebase
+        - title: Continuous Deployment mit Docker und Jenkins
           lang: de
-          speaker: Johannes Reuter
+          speaker: Martina Kraus
           audience: Beginners
-          speakerlink:
+          speakerlink: https://twitter.com/wing121
           abstract: |
-            "Server-less applications" und "BaaS" sind gerade ein ziemlich heißes Thema. Doch was genau verbirgt sich hinter diesem Begriff? Und lohnt sich das für die Umsetzung meiner nächste Idee?
-            Dieser Vortrag erklärt das grundsätzliche Konzept und zeigt, wie sich mit dem Provider Firebase innerhalb von kürzester Zeit komplette, echtzeitfähige Web-Anwendungen entwickeln lassen.
-            Die vielen zusätzlichen Features, die Firebase rund um die Basis-Funktionalität anbietet, machen den Unterschied zwischen einem Wochenend-Projekt und einer richtigen, produktiven Anwendung.
-          tags: Web
+            Nach einem kleinen Überblick zu Docker und Jenkins wird darauf eingegangen wie man mithilfe einer privaten Docker Registry und dem Build-Server Jenkins das Deployment auf einem lokalem Testsystem, auf einem Staging- und einem Liveserver automatisieren kann. Hierbei wird gezielt auf Technologien wie Docker-Compose und Shipyard eingegangen.
+          tags: Infrastructure
           room: Schauburg
         - title: Mobile Apps mit Angular und Cordova
           lang: de
@@ -84,18 +82,29 @@
             Vorkenntnisse im Bereich HTML5 und Angular sind hilfreich, aber nicht zwingend notwendig.
           tags: Mobile
           room: Cinema
-        - title: Continuous Deployment mit Docker und Jenkins
+        - title: Getting Started with Firebase
           lang: de
-          speaker: Martina Kraus
+          speaker: Johannes Reuter
           audience: Beginners
-          speakerlink: https://twitter.com/wing121
+          speakerlink:
           abstract: |
-            Nach einem kleinen Überblick zu Docker und Jenkins wird darauf eingegangen wie man mithilfe einer privaten Docker Registry und dem Build-Server Jenkins das Deployment auf einem lokalem Testsystem, auf einem Staging- und einem Liveserver automatisieren kann. Hierbei wird gezielt auf Technologien wie Docker-Compose und Shipyard eingegangen.
-          tags: Infrastructure
+            "Server-less applications" und "BaaS" sind gerade ein ziemlich heißes Thema. Doch was genau verbirgt sich hinter diesem Begriff? Und lohnt sich das für die Umsetzung meiner nächste Idee?
+            Dieser Vortrag erklärt das grundsätzliche Konzept und zeigt, wie sich mit dem Provider Firebase innerhalb von kürzester Zeit komplette, echtzeitfähige Web-Anwendungen entwickeln lassen.
+            Die vielen zusätzlichen Features, die Firebase rund um die Basis-Funktionalität anbietet, machen den Unterschied zwischen einem Wochenend-Projekt und einer richtigen, produktiven Anwendung.
+          tags: Web
           room: Bambi
     - from: 11:45
       to: 12:45
       sessions:
+        - title: The Java 9 Module System in Action
+          lang: en
+          speaker: Nicolai Parlog
+          audience: Intermediates
+          speakerlink: http://blog.codefx.org/about-nicolai-parlog/
+          abstract: |
+            You might have heard about Project Jigsaw in Java 9 but did you see it in action? This talk will walk you through the features and pitfalls while modularizing an example application. With the different pieces of the puzzle coming together you will be able to vet or even spike your app's migration.
+          tags: Java
+          room: Schauburg
         - title: Eine für alles: TypeScript für Client & Server - echtes Cross-Plattform
           lang: de
           speaker: Christian Weyer
@@ -113,15 +122,6 @@
           abstract: |
             Das Kundenterminal in den Filialen des Drogeriemarkts dm: Altgeräte mit Touch-Bildschirmen, die nur Druck, aber kein Wischen erkennen, iPads als Neugeräte und dazu Peripheriehardware. Zum Teil findet sich all das in abgelegenen Bergregionen mit schlechter Internetverbindung. Wie bekommt man das unter einen Hut? Mit modernen Webtechnologien und AngularJS! Wir stellen in diesem Vortrag die neuentwickelte Architektur sowie die verwendete Toolchain vor und erklären, wie wir durch automatisierte Unit- und End-to-End-Tests die Qualität des Produkts sicherstellen.
           tags: Web
-          room: Cinema
-        - title: The Java 9 Module System in Action
-          lang: en
-          speaker: Nicolai Parlog
-          audience: Intermediates
-          speakerlink: http://blog.codefx.org/about-nicolai-parlog/
-          abstract: |
-            You might have heard about Project Jigsaw in Java 9 but did you see it in action? This talk will walk you through the features and pitfalls while modularizing an example application. With the different pieces of the puzzle coming together you will be able to vet or even spike your app's migration.
-          tags: Java
           room: Bambi
     - from: 12:45
       to: 13:45
@@ -131,14 +131,18 @@
     - from: 13:45
       to: 14:45
       sessions:
-        - title: Bazel: Building at Google Scale
+        - title: Deep Learning - The Past, Present and Future of Artificial Intelligence
           lang: en
-          speaker: Damien Martin-Guillerez
+          speaker: Lukas Masuch
           audience: Beginners
-          speakerlink: https://bazel.build
+          speakerlink: http://lukasmasuch.com
           abstract: |
-            Google builds software for billions of users in one single gigantic repository of around 2 billion lines of code. Google engineers have developed a full suite of tools to support software development at that scale. Among those tools is Bazel, Google's own build system that was open-sourced in March 2015. This talk will give an overview of the tool suite that serves more than 30k engineers around the globe with a focus on the build infrastructure. It will then present Bazel and the properties that make it an essential piece of that build infrastructure.
-          tags: Tooling
+            TLDR: This talk is a basic introduction to Deep Learning
+
+            In the last couple of years, deep learning techniques have transformed the world of artificial intelligence. One by one, the abilities and techniques that humans once imagined were uniquely our own have begun to fall to the onslaught of ever more powerful machines. Deep neural networks are now better than humans at tasks such as face recognition and object recognition. They’ve mastered the ancient game of Go and thrashed the best human players. “The pace of progress in artificial general intelligence is incredible fast” (Elon Musk – CEO Tesla & SpaceX) leading to an AI that “would be either the best or the worst thing ever to happen to humanity” (Stephen Hawking – Physicist).
+
+            What sparked this new hype? How is Deep Learning different from previous approaches? Let’s look behind the curtain and unravel the reality. This talk will introduce the core concept of deep learning, explore why Sundar Pichai (CEO Google) recently announced that “machine learning is a core transformative way by which Google is rethinking everything they are doing” and explain why “deep learning is probably one of the most exciting things that is happening in the computer industry“ (Jen-Hsun Huang – CEO NVIDIA).
+          tags: Machine Learning
           room: Schauburg
         - title: Moderne Android-App - Aber wie?
           lang: de
@@ -150,22 +154,27 @@
             Dies sind alles Fragen, welche sich der Vortragende und seine Kollegen bei der Entwicklung einer weit verbreiteten App gestellt haben und immer wieder von neuem stellen. Im Vortrag werden die Fragen und Lösungsansätze anhand dieser App erläutert und die Lehren aus der bisherigen Entwicklung vorgestellt.
           tags: Android
           room: Cinema
-        - title: Deep Learning - The Past, Present and Future of Artificial Intelligence
+        - title: Bazel: Building at Google Scale
           lang: en
-          speaker: Lukas Masuch
+          speaker: Damien Martin-Guillerez
           audience: Beginners
-          speakerlink: http://lukasmasuch.com
+          speakerlink: https://bazel.build
           abstract: |
-            TLDR: This talk is a basic introduction to Deep Learning
-            
-            In the last couple of years, deep learning techniques have transformed the world of artificial intelligence. One by one, the abilities and techniques that humans once imagined were uniquely our own have begun to fall to the onslaught of ever more powerful machines. Deep neural networks are now better than humans at tasks such as face recognition and object recognition. They’ve mastered the ancient game of Go and thrashed the best human players. “The pace of progress in artificial general intelligence is incredible fast” (Elon Musk – CEO Tesla & SpaceX) leading to an AI that “would be either the best or the worst thing ever to happen to humanity” (Stephen Hawking – Physicist). 
-            
-            What sparked this new hype? How is Deep Learning different from previous approaches? Let’s look behind the curtain and unravel the reality. This talk will introduce the core concept of deep learning, explore why Sundar Pichai (CEO Google) recently announced that “machine learning is a core transformative way by which Google is rethinking everything they are doing” and explain why “deep learning is probably one of the most exciting things that is happening in the computer industry“ (Jen-Hsun Huang – CEO NVIDIA).
-          tags: Machine Learning
+            Google builds software for billions of users in one single gigantic repository of around 2 billion lines of code. Google engineers have developed a full suite of tools to support software development at that scale. Among those tools is Bazel, Google's own build system that was open-sourced in March 2015. This talk will give an overview of the tool suite that serves more than 30k engineers around the globe with a focus on the build infrastructure. It will then present Bazel and the properties that make it an essential piece of that build infrastructure.
+          tags: Tooling
           room: Bambi
     - from: 14:45
       to: 15:45
       sessions:
+        - title: Everyday machine intelligence for your everyday applications
+          lang: en
+          speaker: Benjamin Räthlein, Henning Muszynski
+          audience: Beginners
+          speakerlink: https://twitter.com/raethlein
+          abstract: |
+            Artificial Intelligence, Machine Learning, Deep Learning, or Bots are not only buzzwords used by the big five anymore. They are at your fingertips and are waiting to be used in your own applications. Whether you start a new application from scratch or working on a legacy system, there are always possibilities to improve your system by leveraging machine intelligence. The overwhelming jungle of modern technologies and algorithms can be daunting for any developer. In this talk, we take you by the hand and show you how to make your applications smarter by using state-of-the-art tools and techniques.
+          tags: Machine Learning
+          room: Schauburg
         - title: Angular 2 - Concepts and Jumpstart
           lang: de
           speaker: Andreas Jägle
@@ -180,15 +189,6 @@
 
             Der Vortrag geht auf die Unterschiede zu Version 1 ein und erzählt den nicht immer einfachen Weg während der Beta- und RC-Phase.
           tags: Web
-          room: Schauburg
-        - title: Everyday machine intelligence for your everyday applications
-          lang: en
-          speaker: Benjamin Räthlein, Henning Muszynski
-          audience: Beginners
-          speakerlink: https://twitter.com/raethlein
-          abstract: |
-            Artificial Intelligence, Machine Learning, Deep Learning, or Bots are not only buzzwords used by the big five anymore. They are at your fingertips and are waiting to be used in your own applications. Whether you start a new application from scratch or working on a legacy system, there are always possibilities to improve your system by leveraging machine intelligence. The overwhelming jungle of modern technologies and algorithms can be daunting for any developer. In this talk, we take you by the hand and show you how to make your applications smarter by using state-of-the-art tools and techniques.
-          tags: Machine Learning
           room: Cinema
         - title: Data Mangling with MongoDB the Right Way
           lang: en
@@ -208,14 +208,15 @@
     - from: 16:15
       to: 17:15
       sessions:
-        - title: Timing in Android and How it Evolved over the Android Versions
+        - title: Modern (container) infrastructure
           lang: de
-          speaker: Robert Zetzsche
+          speaker: Johannes Scheuermann
           audience: Beginners
-          speakerlink: https://twitter.com/r_zetzsche
+          speakerlink: https://twitter.com/johscheuer
           abstract: |
-            In diesem Vortrag wird auf einen wichtigen Teil vieler Android Apps eingegangen: Timing. Dabei hat sich seit Android Marshmallow und Nougat durch den Doze Mode und das App Standby einiges geändert. In diesem Vortrag soll es um die verschiedenen Möglichkeiten gehen, wie man Aufgaben in Android vernünftig timen und auslösen kann. Dabei werden verschiedene Ansätze besprochen und verglichen (bspw. Alarmmanager, JobScheduler, GcmJobManager) und wie sich diese in den verschiedenen Android Versionen verhalten. Es werden abschließend Best Practices gegeben, welche Wahl in den verschiedensten Anwendungsfällen getroffen werden sollte.
-          tags: Android
+            Building a modern (container) infrastructure brings some new and old challenges. 2014 Google created the Kubernetes project, a container orchestrator, to simplify container scheduling and orchestration.
+            Kubernetes is built with the knowledge of Borg (the internal scheduler at google) and Omega, also Kubernetes is backed by many big companies like RedHat, CoreOS, IBM etc.. In this talk I will show you the architecture and principals of Kubernetes and how Kubernetes supports you building a modern infrastructure. Depending on the audience we can also do an deep dive into Kubernetes.
+          tags: Infrastructure
           room: Schauburg
         - title: Live-Coding: AngularJS-Entwicklung mit TDD
           lang: de
@@ -228,15 +229,14 @@
             Die Gründe für eine spärliche Testautomatisierung sind vielfältig, häufig wird jedoch die hohe Einstiegshürde genannt. Diese Hürde wollen wir in Form einer Live-Coding-Demo zu reduzieren helfen. Wir geben einen praxisnahen Einblick in eine Arbeitsweise, mit der sich n alle Bausteine einer AngularJS-Anwendung testgetrieben entwickeln lassen.
           tags: Web
           room: Cinema
-        - title: Modern (container) infrastructure
+        - title: Timing in Android and How it Evolved over the Android Versions
           lang: de
-          speaker: Johannes Scheuermann
+          speaker: Robert Zetzsche
           audience: Beginners
-          speakerlink: https://twitter.com/johscheuer
+          speakerlink: https://twitter.com/r_zetzsche
           abstract: |
-            Building a modern (container) infrastructure brings some new and old challenges. 2014 Google created the Kubernetes project, a container orchestrator, to simplify container scheduling and orchestration.
-            Kubernetes is built with the knowledge of Borg (the internal scheduler at google) and Omega, also Kubernetes is backed by many big companies like RedHat, CoreOS, IBM etc.. In this talk I will show you the architecture and principals of Kubernetes and how Kubernetes supports you building a modern infrastructure. Depending on the audience we can also do an deep dive into Kubernetes.
-          tags: Infrastructure
+            In diesem Vortrag wird auf einen wichtigen Teil vieler Android Apps eingegangen: Timing. Dabei hat sich seit Android Marshmallow und Nougat durch den Doze Mode und das App Standby einiges geändert. In diesem Vortrag soll es um die verschiedenen Möglichkeiten gehen, wie man Aufgaben in Android vernünftig timen und auslösen kann. Dabei werden verschiedene Ansätze besprochen und verglichen (bspw. Alarmmanager, JobScheduler, GcmJobManager) und wie sich diese in den verschiedenen Android Versionen verhalten. Es werden abschließend Best Practices gegeben, welche Wahl in den verschiedensten Anwendungsfällen getroffen werden sollte.
+          tags: Android
           room: Bambi
     - from: 17:15
       to: 20:00
