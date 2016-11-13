@@ -113,7 +113,7 @@
           abstract: |
             Mit einer Programmiersprache Anwendungen für alle Plattformen bauen - egal ob es eine lokal laufende "App" ist oder es sich aber um ein mitunter komplexeres verteiltes System mit Clients und Servern handelt. In dieser Session zeigt Ihnen Christian Weyer wie man mit der Open-Source-Sprache TypeScript genau diese Wunschvorstellung realisieren kann. Gepaart mit Client Frameworks wie Angular 2 und Server-Umgebungen wie node.js ist dies in 2016 kein Hexenwerk mehr. Wir schreiben Code der auf sprichwörtlich allen Client-Plattformen und -Systemen läuft und sich Quelltext teilen kann mit Server-Lösungen, welche auf allen relevanten Betriebssystemen ausgeführt werden können. Zu schön um wahr zu sein? Schauen wir es uns gemeinsam an!
           tags: Web
-          room: Schauburg
+          room: Cinema
         - title: Web-Apps in spezieller Umgebung: Die Neuentwicklung des dm-Servicepunkts
           lang: de
           speaker: Matthias Reuter, Philipp Christoph
@@ -241,4 +241,4 @@
     - from: 17:15
       to: 20:00
       sessions:
-        - title: DevFest After Party & Gameshow
+        - title: DevFest After Party
