@@ -48,6 +48,9 @@
     - name: billiger.de
       url: http://company.billiger.de/jobs/
       logo: assets/sponsors/billiger.png
+    - name: SAP
+      url: https://icn.sap.com/home.html
+      logo: assets/sponsors/sap.png
 
 - group: Medienpartner
   sponsors:
