@@ -220,13 +220,13 @@
           room: Schauburg
         - title: Live-Coding: AngularJS-Entwicklung mit TDD
           lang: de
-          speaker: Christian Fillibeck, Rouven Röhrig, Markus Vock, Michael Zugelder
+          speaker: Markus Vock
           audience: Intermediates
           speakerlink:
           abstract: |
             AngularJS wurde explizit mit dem Ziel entworfen, damit entwickelte Anwendungen gut testbar zu machen. Trotzdem sind diese Anwendungen in der Praxis oft nur wenig automatisiert getestet.
 
-            Die Gründe für eine spärliche Testautomatisierung sind vielfältig, häufig wird jedoch die hohe Einstiegshürde genannt. Diese Hürde wollen wir in Form einer Live-Coding-Demo zu reduzieren helfen. Wir geben einen praxisnahen Einblick in eine Arbeitsweise, mit der sich n alle Bausteine einer AngularJS-Anwendung testgetrieben entwickeln lassen.
+            Die Gründe für eine spärliche Testautomatisierung sind vielfältig, häufig wird jedoch die hohe Einstiegshürde genannt. Diese Hürde wollen wir in Form einer Live-Coding-Demo zu reduzieren helfen. Wir geben einen praxisnahen Einblick in eine Arbeitsweise, mit der sich alle Bausteine einer AngularJS-Anwendung testgetrieben entwickeln lassen.
           tags: Web
           room: Cinema
         - title: Timing in Android and How it Evolved over the Android Versions
