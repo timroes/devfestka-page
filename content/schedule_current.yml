@@ -42,6 +42,7 @@
           audience: Intermediates
           tags: Android
           speakerlink: https://twitter.com/mreichelt
+          slides: http://bit.ly/allthethings-talk
         - title: The Awesomeness of Go
           lang: en
           speaker: Igor Lankin
@@ -71,6 +72,7 @@
             Nach einem kleinen Überblick zu Docker und Jenkins wird darauf eingegangen wie man mithilfe einer privaten Docker Registry und dem Build-Server Jenkins das Deployment auf einem lokalem Testsystem, auf einem Staging- und einem Liveserver automatisieren kann. Hierbei wird gezielt auf Technologien wie Docker-Compose und Shipyard eingegangen.
           tags: Infrastructure
           room: Schauburg
+          slides: https://speakerdeck.com/codekittey/continuous-deployment-mit-docker-und-jenkins-de
         - title: Mobile Apps mit Angular und Cordova
           lang: de
           speaker: Christian Janz
@@ -93,6 +95,7 @@
             Die vielen zusätzlichen Features, die Firebase rund um die Basis-Funktionalität anbietet, machen den Unterschied zwischen einem Wochenend-Projekt und einer richtigen, produktiven Anwendung.
           tags: Web
           room: Bambi
+          slides: https://drive.google.com/file/d/0B8kCBRkOOWTLbzlodUx6RXVhdE0/view
     - from: 11:45
       to: 12:45
       sessions:
@@ -105,6 +108,7 @@
             You might have heard about Project Jigsaw in Java 9 but did you see it in action? This talk will walk you through the features and pitfalls while modularizing an example application. With the different pieces of the puzzle coming together you will be able to vet or even spike your app's migration.
           tags: Java
           room: Schauburg
+          slides: https://codefx-org.github.io/talk-jigsaw-walkthrough/2016-11-21-Devfest-Ka/#/
         - title: Eine für alles: TypeScript für Client & Server - echtes Cross-Plattform
           lang: de
           speaker: Christian Weyer
@@ -114,6 +118,7 @@
             Mit einer Programmiersprache Anwendungen für alle Plattformen bauen - egal ob es eine lokal laufende "App" ist oder es sich aber um ein mitunter komplexeres verteiltes System mit Clients und Servern handelt. In dieser Session zeigt Ihnen Christian Weyer wie man mit der Open-Source-Sprache TypeScript genau diese Wunschvorstellung realisieren kann. Gepaart mit Client Frameworks wie Angular 2 und Server-Umgebungen wie node.js ist dies in 2016 kein Hexenwerk mehr. Wir schreiben Code der auf sprichwörtlich allen Client-Plattformen und -Systemen läuft und sich Quelltext teilen kann mit Server-Lösungen, welche auf allen relevanten Betriebssystemen ausgeführt werden können. Zu schön um wahr zu sein? Schauen wir es uns gemeinsam an!
           tags: Web
           room: Cinema
+          slides: https://speakerdeck.com/christianweyer/eine-fur-alles-typescript-fur-client-and-server-echtes-cross-plattform
         - title: Web-Apps in spezieller Umgebung: Die Neuentwicklung des dm-Servicepunkts
           lang: de
           speaker: Matthias Reuter, Philipp Christoph
@@ -144,6 +149,7 @@
             What sparked this new hype? How is Deep Learning different from previous approaches? Let’s look behind the curtain and unravel the reality. This talk will introduce the core concept of deep learning, explore why Sundar Pichai (CEO Google) recently announced that “machine learning is a core transformative way by which Google is rethinking everything they are doing” and explain why “deep learning is probably one of the most exciting things that is happening in the computer industry“ (Jen-Hsun Huang – CEO NVIDIA).
           tags: Machine Learning
           room: Schauburg
+          slides: https://drive.google.com/file/d/0B8kCBRkOOWTLbzlodUx6RXVhdE0/view
         - title: Moderne Android-App - Aber wie?
           lang: de
           speaker: Daniel Bälz
@@ -154,6 +160,7 @@
             Dies sind alles Fragen, welche sich der Vortragende und seine Kollegen bei der Entwicklung einer weit verbreiteten App gestellt haben und immer wieder von neuem stellen. Im Vortrag werden die Fragen und Lösungsansätze anhand dieser App erläutert und die Lehren aus der bisherigen Entwicklung vorgestellt.
           tags: Android
           room: Cinema
+          slides: http://dbaelz.de/wp-content/uploads/2016/11/Moderne-Android-App.pdf
         - title: Bazel: Building at Google Scale
           lang: en
           speaker: Damien Martin-Guillerez
@@ -175,6 +182,7 @@
             Artificial Intelligence, Machine Learning, Deep Learning, or Bots are not only buzzwords used by the big five anymore. They are at your fingertips and are waiting to be used in your own applications. Whether you start a new application from scratch or working on a legacy system, there are always possibilities to improve your system by leveraging machine intelligence. The overwhelming jungle of modern technologies and algorithms can be daunting for any developer. In this talk, we take you by the hand and show you how to make your applications smarter by using state-of-the-art tools and techniques.
           tags: Machine Learning
           room: Schauburg
+          slides: https://docs.google.com/presentation/d/1mQNmdccUKRDg_lfZS95zkhN3bIxY95afD4cZOmn2OP4
         - title: Angular 2 - Concepts and Jumpstart
           lang: de
           speaker: Andreas Jägle
@@ -201,6 +209,7 @@
             Soon MongoDB Atlas, an elastic, on-demand cloud service will also be available for the Google Cloud Platform. So, time to get ready…
           tags: Infrastructure
           room: Bambi
+          slides: https://drive.google.com/file/d/0BxD_IyXfaOuVOFJiaC14NE5Eclk/view
     - from: 15:45
       to: 16:15
       sessions:
