@@ -30,6 +30,7 @@
           audience: Beginners
           tags: Web
           speakerlink: https://twitter.com/jonasmoosmann
+          slides: https://docs.google.com/presentation/d/12x-sIyCTexf1fSo0BH07KluxiKuTAXl0p8Cq53MdDYU/
         - title: Automate *all the things* – how a cat slowed down our Android builds
           lang: en
           speaker: Marc Reichelt
