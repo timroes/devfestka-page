@@ -199,6 +199,7 @@
             Der Vortrag geht auf die Unterschiede zu Version 1 ein und erzählt den nicht immer einfachen Weg während der Beta- und RC-Phase.
           tags: Web
           room: Cinema
+          slides: https://ajaegle.de/talks/2016/gdg-angular2.pdf
         - title: Data Mangling with MongoDB the Right Way
           lang: en
           speaker: Alexander Hendorf
